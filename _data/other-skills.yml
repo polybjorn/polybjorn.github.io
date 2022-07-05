@@ -1,0 +1,11 @@
+- name: Docker
+  percentage: 85
+  color:
+
+- name: Affinity Publisher
+  percentage: 70
+  color: warning
+
+- name: SketchUp
+  percentage: 60
+  color: danger

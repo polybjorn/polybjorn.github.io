@@ -1,0 +1,11 @@
+- name: YAML
+  percentage: 95
+  color: light
+
+- name: G-Code
+  percentage: 80
+  color: light
+
+- name: Python
+  percentage: 50
+  color: light
