@@ -36,22 +36,6 @@ collections:
     output: true
     permalink: /projects/:name
 
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-### Buy me a coffee ###
-# See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
-
-
 ### Defaults for collections ###
 defaults:
   - scope:
@@ -64,7 +48,6 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
-
 
 ### Exclude from processing ###
 exclude:
