@@ -1,12 +1,17 @@
 ---
-title: Clean Coding
-tags: [Software Development, Clean Code]
+title: ZSH configuration
+tags: [Terminal, Templating]
 style: fill
 color: info
-description: These four “clean code” tips will dramatically improve your engineering team’s productivity
+description: TL;DR
 ---
 
-Source: [Jonathan Fulton](https://engineering.videoblocks.com/these-four-clean-code-tips-will-dramatically-improve-your-engineering-teams-productivity-b5bd121dd150)
+While I'm under the impression 'everyone' begins their Linux career with Bash, anything else seemed like a active choice, and if not default like Bash.. Then why bother.
+
+But now we're here.
+
+# The visuals
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 A few years ago at VideoBlocks we had a major code quality problem: “spaghetti” logic in most files, tons of duplication, no tests and more. Writing new features and even minor bug fixes required a couple of Tums at best and entire bottles of Pepto-Bismol and Scotch far too often. Our WTFs per minute were sky-high.
 

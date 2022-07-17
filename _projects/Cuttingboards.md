@@ -2,7 +2,7 @@
 name: Cutting boards
 tools: [CAD, CNC, laser, 3D print]
 image: https://i.imgur.com/EA3R4o2.jpg
-description: Such a basic product, but there's many ways I could do better.
+description: Collection of good results
 ---
 
 # Cutting boards

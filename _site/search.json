@@ -1,11 +1,11 @@
 [
   
     {
-      "title"    : "Clean Coding",
+      "title"    : "ZSH configuration",
       "category" : "",
-      "tags"     : "Software Development, Clean Code",
-      "url"      : "/blog/clean-coding",
-      "date"     : "2018-12-10 00:00:00 +0100"
+      "tags"     : "Terminal, Templating",
+      "url"      : "/blog/ZSH",
+      "date"     : "2022-07-18 01:03:20 +0200"
     } 
   
 ]
