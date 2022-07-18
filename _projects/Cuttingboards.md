@@ -1,6 +1,6 @@
 ---
 name: Cutting boards
-tools: [CAD, CNC, laser, 3D print]
+tools: [CAD, CNC, laser, FDM]
 image: https://i.imgur.com/EA3R4o2.jpg
 description: Collection of good results
 ---

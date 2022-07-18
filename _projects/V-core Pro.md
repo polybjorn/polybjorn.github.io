@@ -1,8 +1,8 @@
 ---
 name: 3D printer
-tools: [CAD, CNC, 3D print]
+tools: [CAD, CNC, FDM]
 image: https://i.imgur.com/aRsPplF.jpg
-description: Build version album
+description: Custom build
 ---
 
 # Ratrig V-Core Pro 1.3
