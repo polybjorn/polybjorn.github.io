@@ -15,7 +15,7 @@ Started selfhosting with Docker. My current goal is to continue to incorporate C
 
 I have learned vector design using Serif Affinity software, which I have since started recommending to everyone's wallets. Having a technical writer job redesigning manuals using Affinity Publisher have probably borrowed heavily from all the YAML templating that started before it.
 
-I think I have become comfortable juggling all of this because I try to keep a minimal digital footprint, and I organize as much as possible using Eagle. I would however not be able to do any of it without the people I've met in Mandal.
+I think I have become comfortable juggling this because I try to keep a minimal digital footprint, and I organize as much as possible using Eagle and Agenda. I would however not be able to do any of it without the people I've met in Mandal.
 
 Reach out using Telegram or email linked at the bottom of the page. Thanks you!
 
