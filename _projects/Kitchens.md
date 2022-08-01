@@ -9,8 +9,6 @@ description: Economical redesign
 
 This far I have redesigned IKEA METOD, IKEA FAKTUM and Hamran to varying degrees of completed collections. 
 
-If your kitchen designer also made bad choices, you might be interested in redesigns of IKEA's PAX wardrobes as well.
-
 Untreated MDF is perfect for this in price, amount of work and result.
 
 {% capture carousel_images %}

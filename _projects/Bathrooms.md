@@ -7,7 +7,7 @@ description: Economical redesign
 
 # Bathrooms
 
-Specifically redesigned IKEA GODMORGON cabinets to get something more unique, just with much less work and waste.
+Redesigned IKEA GODMORGON cabinets, just with much less work and waste.
 
 {% capture carousel_images %}
 https://i.imgur.com/Q3d5Fiy.jpg
