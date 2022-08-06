@@ -7,7 +7,7 @@ description: Economical redesign
 
 # Bathrooms
 
-IKEA GODMORGON redesigned
+IKEA GODMORGON redesigned.
 
 {% capture carousel_images %}
 https://i.imgur.com/Q3d5Fiy.jpg
