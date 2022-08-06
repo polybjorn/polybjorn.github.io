@@ -7,7 +7,7 @@ description: Economical redesign
 
 # Kitchens
 
-This far I have redesigned IKEA METOD, IKEA FAKTUM and Hamran to varying degrees of completed collections. 
+IKEA METOD, IKEA FAKTUM and Hamran to varying degrees of completed collections. 
 
 Untreated MDF is perfect for this in price, amount of work and result.
 
