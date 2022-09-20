@@ -9,7 +9,7 @@ weight: 3
 
 Hi! I'm **{{ site.author.name }}** and I live in southern Norway.<br>
 
-A few years ago I was introduced to 3D printing, which led me to recently build my own machine with a Duet webserver. With a lot of help I learned that making stuff with CNCs and lasercutters is very similar. I have recreated several common design series like IKEA and other kitchen producers, which I have used to refresh kitchens, bathrooms and workshops for a fraction of the cost.
+A few years ago I was introduced to 3D printing, which led me to recently build my own machine with a Duet webserver. With a lot of help I learned that making stuff with CNCs and lasercutters is very similar. I have recreated several common design series from IKEA and other kitchen producers, which I have used to refresh kitchens, bathrooms and workshops for a fraction of the cost.
 
 Started selfhosting with Docker. My current goal is to continue to incorporate Cloud Native Computing Foundation (CNCF) projects as I go. I want to selfhost with a low-power cluster network with off-site nodes, automated with Ansible and Kubernetes.
 
