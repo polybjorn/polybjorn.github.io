@@ -6,7 +6,7 @@ As I try to switch to organic and/or sustainable clothes, I also have to accept 
 
 There are companies focusing on specialization by using 3D printing, such as Adidas’ “Futurecraft 4D,” New Balance’s “Zante Generate,” and Nike’s “Flyprint.” FFF and SLS printing enables custom products which increase durability as well as enabling a larger range of materials, but they are far from fully organic products.
 
-![Barefoot shoes](https://imgur.com/a/bXcxi1d "Be Lenka")
+![Barefoot shoes](https://i.imgur.com/wOhG1es.jpg "Be Lenka")
 
 I recently discovered barefoot shoes, which are shoes made with a thin and flat sole and often come with a larger toe box to allow your toes to splay and move more freely. This type of shoe can help increase balance and reduce the risk of injuries.
 
