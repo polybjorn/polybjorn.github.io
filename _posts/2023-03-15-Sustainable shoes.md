@@ -1,12 +1,14 @@
-Until fairly recently, clothes were very abstract to me. They weren’t as long-lasting as you would expect from furniture or tools, but also not as temporary as a consumable, like personal care products. The cost discrepancy between easily accessible clothes and sustainable clothes is also fairly large. Now that everyone wants to brand themselves as environmentally friendly, it’s easy to find clothes with ‘50%+ organically sourced materials’ or recycled polyester, but this is generally very surface-level information only. At best, it is a step in the right direction.
+Until fairly recently, clothes were very abstract to me. They weren’t as long-lasting as you would expect from furniture or tools, but also not as temporary as a consumable, like personal care products. And in regard to materials, clothes can easily be fully organic and still be unsustainably sourced or produced. I probably have clothes made by people, or possibly children, not paid and protected as we would expect in our part of the world.
 
-Unlike electronics or furniture producers who often have their own product pages, fashion companies often only provide very general information and usually just promote the certifications they have received. In a world where prominent European brands like IKEA, Jysk, Zara, ASOS, H&M, Nestle and Carlsberg, among others, have all been caught using forced labor in the last 5 years, a vague list of certifications just doesn’t cut it.
+ The cost discrepancy between easily accessible clothes and sustainable clothes is also fairly large. Now that everyone wants to brand themselves as environmentally friendly, it’s easy to find clothes with ‘50%+ organically sourced materials’ or recycled polyester, but it's usually a single sentence of information, without any easily accessed proof.
+
+Unlike electronics or furniture producers who often have their own detailed product pages, fashion companies often only provide very general information and usually just promote the certifications they have received. In a world where prominent European brands like IKEA, Jysk, Zara, ASOS, H&M, Nestle and Carlsberg, among others, have all been caught using forced labor in the last 5 years, a vague list of certifications just doesn’t cut it.
 
 As I try to switch to organic and/or sustainable clothes, I also have to accept that for some items, it may be impossible to find completely sustainable options. Without making very large compromises, shoes are impossible to make with 100% organic materials.
 
 There are companies focusing on specialization by using 3D printing, such as Adidas’ “Futurecraft 4D,” New Balance’s “Zante Generate,” and Nike’s “Flyprint.” FFF and SLS printing enables custom products which increase durability as well as enabling a larger range of materials, but they are far from fully organic products.
 
-![Barefoot shoes](https://i.imgur.com/wOhG1es.jpg "Be Lenka")
+![Barefoot shoes](https://i.imgur.com/wOhG1es.jpgp "Be Lenka")
 
 I recently discovered barefoot shoes, which are shoes made with a thin and flat sole and often come with a larger toe box to allow your toes to splay and move more freely. This type of shoe can help increase balance and reduce the risk of injuries.
 
