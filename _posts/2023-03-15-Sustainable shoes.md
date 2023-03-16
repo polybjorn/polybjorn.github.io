@@ -8,7 +8,7 @@ As I try to switch to organic and/or sustainable clothes, I also have to accept 
 
 Just because a product uses organic materials, it can also be highly unsustainable. For instance, IKEA reportedly makes products using illegally harvested or stolen timber from Madagascar, Russia, Ukraine, and Romania, although it should be noted that IKEA denies the allegations and claims that strict policies are in place to avoid this.
 
-Some companies specialize in using 3D printing, such as Adidas' "Futurecraft 4D," New Balance's "Zante Generate," and Nike's "Flyprint." FFF and SLS printing enables custom products that increase durability and enable a larger range of materials, but they are far from fully organic products.
+Some companies specialize in using 3D printing, such as Adidas' "Futurecraft 4D," New Balance's "Zante Generate," and Nike's "Flyprint." FFF and SLS printing enables custom products that increase durability and enable a larger range of materials. Although they are not focusing on being organic products, they are highly specialized for their purpose.
 
 Instead of listing companies, I'd rather point out ethically produced materials to look for. Soles are generally wholly synthetic, but they can be made of recycled materials like PET bottles or car tires, or include natural rubber. If you can accept non-vegan materials, look for vegetable-tanned leather. Other biodegradable materials include natural rubber, organic cotton, and cork.
 
