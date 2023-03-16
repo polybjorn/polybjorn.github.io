@@ -17,12 +17,7 @@ I have learned vector design using Serif Affinity software, which I have since s
 
 I think I have become comfortable juggling this because I try to keep a minimal digital footprint, and I organize as much as possible using Eagle and Agenda. I would however not be able to do any of it without the people I've met in Mandal.
 
-Reach out using Telegram or email linked at the bottom of the page. Thanks you!
-
-<div class="row">
-{% include about/skills.html title="Programming skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other skills" source=site.data.other-skills %}
-</div>
+Reach out using the links at the bottom of the page. Thanks you!
 
 <div class="row">
 {% include about/timeline.html %}
