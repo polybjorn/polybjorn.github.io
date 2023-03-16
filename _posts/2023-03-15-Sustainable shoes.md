@@ -10,7 +10,7 @@ Just because a product uses organic materials, it can also be highly unsustainab
 
 Some companies specialize in using 3D printing, such as Adidas' "Futurecraft 4D," New Balance's "Zante Generate," and Nike's "Flyprint." FFF and SLS printing enables custom products that increase durability and enable a larger range of materials, but they are far from fully organic products.
 
-Instead of listing companies, I'd rather point out ethically produced materials to look for. Soles are generally wholly synthetic, but they can be made of recycled materials like natural rubber, PET bottles, or car tires. If you can accept non-vegan materials, look for vegetable-tanned leather. Other biodegradable materials include natural rubber, organic cotton, and cork.
+Instead of listing companies, I'd rather point out ethically produced materials to look for. Soles are generally wholly synthetic, but they can be made of recycled materials like PET bottles or car tires, or include natural rubber. If you can accept non-vegan materials, look for vegetable-tanned leather. Other biodegradable materials include natural rubber, organic cotton, and cork.
 
 ![Barefoot shoes](https://i.imgur.com/wOhG1es.jpg "Be Lenka")
 
