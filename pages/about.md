@@ -17,7 +17,7 @@ One of my core values is the open-source philosophy. I believe that sharing desi
 
 In addition to my design work, I'm deeply committed to sustainability. I spend a lot of time researching and exploring ways to minimize my use of synthetic materials and make more sustainable choices in all areas of my life. I believe that we all have a responsibility to take care of our planet, and I'm proud to do my part in promoting a more sustainable way of living.
 
-If you're interested in working together or just want to connect, please don't hesitate to get in touch using the links at the bottom of the page.
+Please don't hesitate to get in touch using the links at the bottom of the page.
 
 <div class="row">
 {% include about/timeline.html %}
