@@ -1,4 +1,4 @@
-Clothes can easily be fully organic and still be unsustainably sourced or produced. They can be made with heavily processed organic materials, stolen materials, or by people not paid for their work, or even forced into labor. Lastly, a significant environmental cost is the material and product transportation.
+Clothes can easily be fully organic and still be unsustainably sourced or produced. They can be made with heavily processed or stolen organic materials, in dangerous factories, and even by forced labor. Even without all that, a significant environmental cost is the material and product transportation.
 
 Unlike electronics or furniture producers who often have their own detailed product pages with technical specifications, manuals, and vendor lists, fashion companies usually provide very general information or certifications. However, in a world where prominent European brands like IKEA, Jysk, Zara, ASOS, H&M, Nestle, and Carlsberg have all been reported using forced labor in the last 5 years, a vague list of certifications does not suffice.
 
