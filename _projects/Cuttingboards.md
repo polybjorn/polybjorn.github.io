@@ -2,14 +2,10 @@
 name: Cutting boards
 tools: [CAD, CNC, laser, FDM]
 image: https://i.imgur.com/EA3R4o2.jpg
-description: Collection of good results
+description: Testing mass production techniques
 ---
 
 # Cutting boards
-
-I treat them food-grade, but at the same time I think the quality of wood have not been good enough to recommend it as such, yet. However if I do get better quality, I'm not wasting the opportunity to try making end grain blocks.
-
-It's been a great way to speedrun the production process and mass production techniques.
 
 {% capture carousel_images %}
 https://i.imgur.com/EA3R4o2.jpg

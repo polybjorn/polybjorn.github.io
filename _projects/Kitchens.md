@@ -2,14 +2,12 @@
 name: Kitchens
 tools: [CAD, CNC, FDM]
 image: https://i.imgur.com/Giyx1oa.jpg
-description: Economical redesign
+description: Redesign
 ---
 
 # Kitchens
 
-IKEA METOD, IKEA FAKTUM and Hamran to varying degrees of completed collections. 
-
-Untreated MDF is perfect for this in price, amount of work and result.
+IKEA METOD, IKEA FAKTUM and Hamran kitchens with custom MDF fronts. 
 
 {% capture carousel_images %}
 https://i.imgur.com/Giyx1oa.jpg
