@@ -1,30 +1,30 @@
 # site settings
 
-title: Bjørn A. Andersen
-description: Makerspace designer
-taglong: Digital business card
-tagshort: Digital business card
-url: https://polybjorn.com
-baseurl: "polybjorn.com"
+title: cvless
+description: Jekyll theme for a beautiful online CV
+taglong: Jekyll theme for a beautiful online CV
+tagshort: Jekyll theme
+url: https://cvless.netlify.app
+baseurl: ""
 permalink: pretty
-repo: https://github.com/polybjorn/polybjorn.github.io
+repo: https://github.com/username/username.github.io
 
 # author settings
 
 author:
-  name: Bjørn A. Andersen
-  email: bjanda@pm.me
+  name: Place Holder
+  email: username@domain.com
 photo: /assets/jpg/photo.jpg
 
 # social media links
 
 social:
-  github: polybjorn
-  linkedin: bjanda
-  facebook: 
-  instagram: 
-  stackoverflow: 
-  twitter: 
+  facebook: username
+  github: username
+  instagram: username
+  linkedin: username
+  stackoverflow: 0000000/username
+  twitter: username
 
 # build settings
 
