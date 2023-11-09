@@ -7,7 +7,7 @@ title: Home
 
 I manage **Addidé**, a specialized makerspace for local businesses, with **Lindesnesregionen Næringshage** in Mandal. Our goal is to democratize 3D design for the local business community.
 
-This space serves as a central point where companies can come to learn about 3D design, collaborate on projects, and even place orders for designs they need. We envision our makerspace as a modern complement to the traditional makerspace workshop.
+This space serves as a central point where companies can come to learn about 3D design, collaborate on projects, and even place orders for designs they need. We envision our makerspace as a sustainable flavor to the traditional makerspace workshop.
 
 We're equipped with various FFF and SLA 3D printers, a 3-axis CNC, 3D scanners, post-processing machines and tools, and a large workshop mixed with electronics and woodworking equipment.
 
