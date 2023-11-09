@@ -5,9 +5,9 @@ title: CV
 
 {% include contact.html %}
 
-# Experience
+## Experience
 
-### Lindesnesregionen Næringshage
+#### Lindesnesregionen Næringshage
 Makerspace technician at Addidé; working mainly with graphics design, 3D modeling and machine design.
 
 ### Nøsted &
