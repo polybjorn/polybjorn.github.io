@@ -1,6 +1,6 @@
 ---
-layout: Digital business card
-title: Digital business card
+layout: home
+title: Home
 ---
 
 # About me
