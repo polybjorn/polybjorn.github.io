@@ -7,4 +7,3 @@ title: CV
 
 {% include contact.html %}
 
-## Experience
