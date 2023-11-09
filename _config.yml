@@ -5,7 +5,7 @@ description: Makerspace designer
 taglong: Digital business card
 tagshort: Digital business card
 url: https://polybjorn.com
-baseurl: "polybjorn.com"
+baseurl: ""
 permalink: pretty
 repo: https://github.com/polybjorn/polybjorn.github.io
 
