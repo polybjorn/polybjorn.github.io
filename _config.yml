@@ -19,12 +19,9 @@ photo: /assets/jpg/photo.jpg
 # social media links
 
 social:
-  github: polybjorn
-  linkedin: bjanda
-  telegram: bjanda
   mail: bjanda@pm.me
   grabcad: bjorn.a.andersen-1
-  obsidian: polybjorn
+  github: polybjorn
 
 # build settings
 
