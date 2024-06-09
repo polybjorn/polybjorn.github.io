@@ -10,3 +10,5 @@ Here, you can learn about 3D design, collaborate on projects, or place orders fo
 Typical requests include creating a digital twin of an existing physical part and 3D printing it with materials suited to specific environmental needs, or producing a physical prototype from a 3D model.
 
 Our makerspace is equipped with various FFF and SLA 3D printers, a 3-axis CNC machine, post-processing equipment, and a large workshop that includes electronics and woodworking tools. We also track locally available equipment and facilitate connections through our network.
+
+Addidé is located at **Hollendergata 3**, 4514 Mandal.
