@@ -5,7 +5,7 @@ title: Home
 
 # About me
 
-I manage **Addidé**, a specialized makerspace for local businesses, with **Lindesnesregionen Næringshage** in Mandal. Our goal is to democratize 3D design for the local business community.
+I manage [**Addidé**](https://www.addide.no), a specialized makerspace for local businesses, with **Lindesnesregionen Næringshage** in Mandal. Our goal is to democratize 3D design for the local business community.
 
 This space serves as a central point where companies can come to learn about 3D design, collaborate on projects, and even place orders for designs they need. We envision our makerspace as a sustainable flavor of the traditional makerspace workshop.
 
