@@ -5,10 +5,12 @@ title: Home
 
 # About me
 
-I manage [**Addidé**](https://www.addide.no), a specialized makerspace for local businesses, with **Lindesnesregionen Næringshage** in Mandal. Our goal is to democratize 3D design for the local business community.
+I manage [**Addidé**](https://www.addide.no), a specialized makerspace primarily for local businesses, with **Lindesnesregionen Næringshage** in Mandal. Our goal is to establish 3D design and 3D printing in the community.
 
-This space serves as a central point where companies can come to learn about 3D design, collaborate on projects, and even place orders for designs they need. We envision our makerspace as a sustainable flavor of the traditional makerspace workshop.
+Learn about 3D design, collaborate on projects, or place orders for designs you already have. 
 
-We're equipped with various FFF and SLA 3D printers, a 3-axis CNC, 3D scanners, post-processing machines and tools, and a large workshop mixed with electronics and woodworking equipment.
+Typical requests is to create a digital twin of a physical model or part, and then 3D print with materials that is suitable to the environment you need them to be in, or simply a physical prototype of a 3D model.
 
-If you're looking to explore 3D design, our makerspace is your resource center. Whether you're starting from scratch or looking to refine your skills, we provide the tools and space for you to advance your business capabilities.
+We're equipped with various FFF and SLA 3D printers, a 3-axis CNC, post-processing machines and tools, and a large workshop mixed with electronics and woodworking equipment. We also take note of equipment available locally, and are happy to enable connections through our network.
+
+If you're looking to explore 3D design, our makerspace is your resource center.
