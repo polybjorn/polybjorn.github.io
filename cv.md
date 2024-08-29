@@ -3,8 +3,6 @@ layout: cv
 title: CV
 ---
 
-{% include contact.html %}
-
 ## Experience
 
 ### **Lindesnesregionen Næringshage**
