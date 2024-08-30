@@ -17,4 +17,4 @@ title: CV
 **Sole proprietorship**: Managed private orders for 3D design using 3D printing and CNC production methods. Portfolio includes cabinets for bathrooms and kitchens, serving boards, office decor, pegboards, and parts for art installations.
 
 ### **Apply TB**
-**Apprentice electrician**: Worked on both residential and industrial teams, including high voltage and optical fiber installations.
+**Apprentice electrician**: Worked on both residential and industrial teams, including high voltage, medical and optical fiber installations.
