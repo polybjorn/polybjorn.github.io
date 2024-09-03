@@ -14,7 +14,7 @@ repo: https://github.com/polybjorn/polybjorn.github.io
 author:
   name: Bjørn Andreas Andersen
   email: bjanda@pm.me
-photo: /assets/jpg/photo.jpg
+  photo: "https://res.cloudinary.com/det9ftymo/image/upload/v1725405810/photo_jn86fv.jpg"
 
 # social media links
 
