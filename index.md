@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Bjørn Andreas Andersen
+title: Home
 ---
 
 I manage <a href="https://www.addide.no" rel="nofollow"><strong>Addidé</strong></a>, a specialized makerspace primarily for local businesses, in collaboration with **Lindesnesregionen Næringshage**. Our goal is to promote 3D design and 3D printing within the community.
