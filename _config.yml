@@ -1,6 +1,6 @@
 # site settings
 
-title: Bjørn A. Andersen
+title: Bjørn Andreas Andersen
 description: Makerspace designer
 taglong: Digital business card
 tagshort: Digital business card
@@ -12,7 +12,7 @@ repo: https://github.com/polybjorn/polybjorn.github.io
 # author settings
 
 author:
-  name: Bjørn A. Andersen
+  name: Bjørn Andreas Andersen
   email: bjanda@pm.me
 photo: /assets/jpg/photo.jpg
 
