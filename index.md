@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-I manage [**Addidé**](https://www.addide.no), a specialized makerspace primarily for local businesses, in collaboration with **Lindesnesregionen Næringshage**. Our goal is to promote 3D design and 3D printing within the community.
+I manage <a href="https://www.addide.no" rel="nofollow"><strong>Addidé</strong></a>, a specialized makerspace primarily for local businesses, in collaboration with **Lindesnesregionen Næringshage**. Our goal is to promote 3D design and 3D printing within the community.
 
 Typical requests include creating a digital copy of an existing physical part and 3D printing it with materials suited to specific environmental needs, or to assist with quick design prototyping. We are also capable of smaller batch productions.
 
