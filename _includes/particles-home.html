@@ -6,16 +6,24 @@
     <h1 class="particles-title">Bjørn A. Andersen</h1>
     <h2 class="particles-subtitle">Digital business card</h2>
     <div class="nowrap">
-        {% if site.social.grabcad %}
-      <a class="particles-icon" href="https://grabcad.com/{{ site.social.grabcad }}" rel="nofollow">{% include svg/cube.svg %}</a>
+      {% if site.social.grabcad %}
+      <a class="particles-icon" href="https://grabcad.com/{{ site.social.grabcad }}" rel="nofollow" aria-label="GrabCAD Profile">
+        {% include svg/cube.svg %}
+      </a>
       {% endif %}
-      <a class="particles-icon" href="cv">{% include svg/cv-circled.svg %}</a>
+      <a class="particles-icon" href="cv" aria-label="Curriculum Vitae">
+        {% include svg/cv-circled.svg %}
+      </a>
       {% if site.social.github %}
-      <a class="particles-icon" href="https://github.com/{{ site.social.github }}" rel="nofollow">{% include svg/github.svg %}</a>
+      <a class="particles-icon" href="https://github.com/{{ site.social.github }}" rel="nofollow" aria-label="GitHub Profile">
+        {% include svg/github.svg %}
+      </a>
       {% endif %}
     </div>
   </div>
   <div class="particles-scroll">
-    <a class="particles-icon" href="#scroll">{% include svg/nav-arrow-down.svg %}</a>
+    <a class="particles-icon" href="#scroll" aria-label="Scroll Down">
+      {% include svg/nav-arrow-down.svg %}
+    </a>
   </div>
 </div>
