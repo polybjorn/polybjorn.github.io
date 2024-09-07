@@ -5,7 +5,7 @@ title: CV
 
 ## Experience
 ### **Mandal Frivilligsentral**
-**Technician at Bua Makerspace**: Maintained 3D printers and computers, hosted courses in 3D design for all ages.
+**Bua Makerspace**: Maintained 3D printers and computers, hosted courses in 3D printing for all ages, and a broader range of summer activities for kids and parents.
 
 ### **Nøsted &**
 **Technical writer**: Redesigned Igland product manuals, created templates, illustrations, and reorganized the manual structure.
