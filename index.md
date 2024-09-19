@@ -7,4 +7,11 @@ I manage <a href="https://www.addide.no" rel="nofollow"><strong>Addidé</strong>
 
 Typical requests include creating a digital copy of an existing physical part and 3D printing it with materials suited to specific environmental needs, to assist with quick design prototyping, or smaller batch productions.
 
+My most valuable tool at the moment is <a href="https://obsidian.md" rel="nofollow"><strong>Obsidian.md</strong></a>
+
+Ref.:
+- <a href="https://en.wikipedia.org/wiki/Personal_knowledge_management" rel="nofollow"><strong>Personal Knowledge Management</strong></a>
+- <a href="https://en.wikipedia.org/wiki/Zettelkasten" rel="nofollow"><strong>Zettelkasten</strong></a>
+- <a href="https://fortelabs.com/blog/basboverview" rel="nofollow"><strong>Second Brain</strong></a>
+
 {% include contact.html %}
