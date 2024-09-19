@@ -18,5 +18,3 @@ Ref.:
 - <a href="https://fortelabs.com/blog/basboverview" rel="nofollow"><strong>Second Brain</strong></a>
 
 {% include contact.html %}
-
-https://www.soenkeahrens.de/en/takesmartnotes#zettelkasten-en
