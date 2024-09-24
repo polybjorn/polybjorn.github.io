@@ -17,4 +17,4 @@ title: CV
 **Substitute instructor**: Taught various courses, maintained the machine park, remodeled and performed general maintenance, assisted with events, and created gifts and quality of life improvements.
 
 ### **Apply TB**
-**Apprentice electrician**: Worked on both residential and industrial teams, including high voltage, medical and optical fiber installations.
+**Apprentice electrician**: Worked on residential and industrial teams, including high voltage, medical and optical fiber installations.
