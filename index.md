@@ -12,9 +12,8 @@ Typical requests include creating a digital copy of an existing physical part an
 My most valuable tool at the moment is <a href="https://obsidian.md" rel="nofollow"><strong>Obsidian.md</strong></a>.
 
 Ref.:
-- <a href="https://en.wikipedia.org/wiki/Personal_knowledge_management" rel="nofollow"><strong>Personal Knowledge Management</strong></a>
 - <a href="https://en.wikipedia.org/wiki/Zettelkasten" rel="nofollow"><strong>Zettelkasten</strong></a>
-    - <a href="https://www.soenkeahrens.de/en/takesmartnotes#zettelkasten-en" rel="nofollow"><strong>Sönke Ahrens</strong></a>
+- <a href="https://www.soenkeahrens.de/en/takesmartnotes#zettelkasten-en" rel="nofollow"><strong>Sönke Ahrens</strong></a>
 - <a href="https://fortelabs.com/blog/basboverview" rel="nofollow"><strong>Second Brain</strong></a>
 
 {% include contact.html %}
