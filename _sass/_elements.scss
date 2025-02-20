@@ -103,19 +103,21 @@ a.reversefootnote {
 
 .contact-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  text-align: center;      /* Ensures text is centered */
-}
-
-.contact-container {
-  display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 .contact {
   max-width: 600px;
+}
+
+.contact ul {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.contact ul li {
+  list-style: none;
 }
 
 .bmc-container {
