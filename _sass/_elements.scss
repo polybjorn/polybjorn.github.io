@@ -107,8 +107,15 @@ a.reversefootnote {
   text-align: center;      /* Ensures text is centered */
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .contact {
-  max-width: 600px;        /* Optional: Restrict width for better readability */
+  max-width: 600px;
 }
 
 .bmc-container {
