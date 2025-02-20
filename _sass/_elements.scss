@@ -101,13 +101,17 @@ a.reversefootnote {
   }
 }
 
+.contact {
+  text-align: center; /* Centers contact info */
+}
+
 .bmc-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  margin-top: 16px;        /* Adds space above */
-  text-align: center;      /* Ensures inline elements are centered */
+  justify-content: center;
+  margin-top: 16px; /* Adjust as needed for spacing */
 }
 
 .bmc-container script {
-  display: block; /* Ensures the script-generated button behaves like a block element */
+  display: block;
+  margin: 0;
 }
