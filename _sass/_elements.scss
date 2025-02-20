@@ -104,6 +104,10 @@ a.reversefootnote {
 .bmc-container {
   display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center;    /* Centers vertically */
-  text-align: center;     /* Ensures inline elements are centered */
+  margin-top: 16px;        /* Adds space above */
+  text-align: center;      /* Ensures inline elements are centered */
+}
+
+.bmc-container script {
+  display: block; /* Ensures the script-generated button behaves like a block element */
 }
