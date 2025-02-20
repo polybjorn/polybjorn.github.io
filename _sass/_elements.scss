@@ -101,17 +101,26 @@ a.reversefootnote {
   }
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  text-align: center;      /* Ensures text is centered */
+}
+
 .contact {
-  text-align: center; /* Centers contact info */
+  max-width: 600px;        /* Optional: Restrict width for better readability */
 }
 
 .bmc-container {
   display: flex;
-  justify-content: center;
-  margin-top: 16px; /* Adjust as needed for spacing */
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 16px;        /* Adds space between contact info and button */
 }
 
-.bmc-container script {
-  display: block;
-  margin: 0;
+.bmc-button {
+  display: inline-flex;       /* Ensures proper alignment */
+  justify-content: center;    /* Centers text horizontally */
+  align-items: center;        /* Centers text vertically */
+  padding: 10px 20px;         /* Adjust padding as needed */
+  font-family: 'Cookie', cursive !important; /* Enforce font style */
 }
