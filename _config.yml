@@ -46,9 +46,6 @@ sass:
 feed:
   path: atom.xml
 
-minima:
-  skin: dark
-
 autopages:
   enabled: false
 
