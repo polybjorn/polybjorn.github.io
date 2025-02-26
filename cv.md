@@ -4,6 +4,9 @@ title: CV
 ---
 
 ## Experience
+### **Lindesnesregionen Næringshage**
+**Additive manufacturing workshop manager**
+
 ### **Mandal Frivilligsentral**
 **Bua Makerspace**: Maintained 3D printers and computers, hosted courses in 3D printing for all ages, and a broader range of summer activities for kids and parents.
 
