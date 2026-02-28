@@ -1,0 +1,45 @@
+---
+const { lang = 'en' } = Astro.props;
+const otherLang = lang === 'en' ? 'no' : 'en';
+const otherUrl = lang === 'en' ? '/no' : '/';
+---
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <slot name="head" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+      .lang-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        color: #555;
+        text-decoration: none;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        z-index: 100;
+        font-family: 'Piazzolla', serif;
+      }
+      .lang-toggle:hover { color: #fff; }
+    </style>
+  </head>
+  <body>
+    <a class="lang-toggle" href={otherUrl}>{otherLang.toUpperCase()}</a>
+    <slot />
+    <script define:vars={{ lang }}>
+      if (lang === 'en' && !localStorage.getItem('lang')) {
+        if (navigator.language.startsWith('no')) {
+          localStorage.setItem('lang', 'no');
+          window.location.replace('/no');
+        }
+      }
+      document.querySelector('.lang-toggle').addEventListener('click', () => {
+        localStorage.setItem('lang', {lang} === 'en' ? 'no' : 'en');
+      });
+    </script>
+  </body>
+</html>

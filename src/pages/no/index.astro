@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { t } from '../data/translations.js';
-import { projects } from '../data/gallery.js';
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../data/translations.js';
+import { projects } from '../../data/gallery.js';
 import { ArrowRight, Mail, Phone, MessageCircle } from 'lucide-astro';
 
-const lang = 'en';
+const lang = 'no';
 const tr = t[lang];
 const location = "Røvær, Haugesund";
 
@@ -80,7 +80,6 @@ const latestImages = projects
     }
 
     .icon-link:hover span { color: #fff; }
-
     .icon-link a img { transition: opacity 0.2s; }
     .icon-link a:hover img { opacity: 0.8; }
 
@@ -166,7 +165,7 @@ const latestImages = projects
 
     .contact {
       padding: 1.5rem 0 2rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       border-top: 1px solid #2a2e35;
       width: 100%;
     }
@@ -237,7 +236,7 @@ const latestImages = projects
     <h1>Bjørn A. Andersen</h1>
     <div class="icons">
       <div class="icon-link">
-        <a href="/cv">
+        <a href="/no/cv">
           <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="icon-img" alt="CV" />
         </a>
         <span>{tr.cv}</span>
@@ -249,8 +248,8 @@ const latestImages = projects
         <span>{tr.models}</span>
       </div>
       <div class="icon-link">
-        <a href="/gallery">
-          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772283848/photo-gallery_pe3tke.svg" class="icon-img" alt="Gallery" />
+        <a href="/no/gallery">
+          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772283848/photo-gallery_pe3tke.svg" class="icon-img" alt="Galleri" />
         </a>
         <span>{tr.gallery}</span>
       </div>
@@ -259,20 +258,20 @@ const latestImages = projects
 
   <div class="content">
     <div class="bio">
-      <p>I work with 3D modelling, additive manufacturing, and graphic design — taking projects from first sketch to finished product. I also run hands-on courses in 3D printing and design. The variety of work is what keeps it interesting, and I'm always happy to help figure out what's possible.</p>
-      <p>I share editable designs under a free and <a href="https://creativecommons.org/licenses/by-sa/4.0/">open license</a> when possible.</p>
-      <p>Currently on <a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener">{location}</a>.</p>
+      <p>{tr.bio1}</p>
+      <p>Jeg deler redigerbare design under en fri og <a href="https://creativecommons.org/licenses/by-sa/4.0/">åpen lisens</a> når det er mulig.</p>
+      <p>For tiden på <a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener">{location}</a>.</p>
     </div>
 
     <div class="preview">
       <div class="preview-grid">
         {latestImages.map((img, i) => (
           <div class="preview-item">
-            {i === 0 && <span class="badge">Latest</span>}
+            {i === 0 && <span class="badge">Siste</span>}
             <img src={img.url} alt={img.alt} loading="lazy" />
           </div>
         ))}
-        <a href="/gallery" class="more-arrow" title="View all models">
+        <a href="/no/gallery" class="more-arrow" title="Se alle modeller">
           <ArrowRight size={36} strokeWidth={1.5} />
         </a>
       </div>

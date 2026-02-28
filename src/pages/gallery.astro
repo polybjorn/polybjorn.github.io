@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { projects } from '../data/gallery.js';
+
+const lang = 'en';
+const allImages = projects.flatMap(p =>
+  p.images.map(img => ({ ...img, project: p.title }))
+);
+---
+
+<Layout lang={lang}>
+  <title slot="head">Gallery – Bjørn A. Andersen</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1e2228;
+      color: #eee;
+      font-family: 'Piazzolla', serif;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #555;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .back:hover { color: #fff; }
+
+    .grid {
+      columns: 3;
+      gap: 1rem;
+    }
+
+    .grid-item {
+      position: relative;
+      margin-bottom: 1rem;
+      break-inside: avoid;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .grid-item.opaque img { background: #1e2228; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background: none;
+}
+
+    .grid-item:hover .overlay { opacity: 1; }
+
+.overlay-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.grid-link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+    @media (max-width: 700px) {
+      .grid { columns: 2; }
+      .overlay { opacity: 1; background: none; }
+      .overlay-title { display: none; }
+    }
+
+    @media (max-width: 400px) {
+      .grid { columns: 1; }
+    }
+  </style>
+
+  <div class="wrap">
+    <a class="back" href="/">← Back</a>
+    <div class="grid">
+      {allImages.map(img => (
+<div class={`grid-item ${img.transparent ? 'transparent' : 'opaque'}`}>
+  {img.link && <a href={img.link} target="_blank" rel="noopener" class="grid-link" />}
+  <img src={img.url} alt={img.alt} loading="lazy" />
+  <div class="overlay">
+    <span class="overlay-title">{img.title}</span>
+  </div>
+</div>
+      ))}
+    </div>
+  </div>
+</Layout>
