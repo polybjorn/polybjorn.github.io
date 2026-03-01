@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../data/translations.js';
 import { projects, cloudinaryUrl } from '../../data/gallery.js';
-import { ArrowRight, Mail, Phone, MessageCircle, Rss } from 'lucide-astro';
+import { Phone, Mail, MessageCircle, ArrowRight, Rss } from 'lucide-astro';
 
 const lang = 'no';
 const tr = t[lang];
@@ -15,7 +15,6 @@ const latestImages = projects
 ---
 
 <Layout lang={lang} title="Bjørn A. Andersen" description="3D-modellering, additiv produksjon og praktiske kurs i 3D-printing. Holder til på Røvær, Haugesund.">
-  
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -80,6 +79,15 @@ const latestImages = projects
     }
 
     .icon-link:hover span { color: #fff; }
+
+    .icon-link a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.15rem;
+      text-decoration: none;
+    }
+
     .icon-link a img { transition: opacity 0.2s; }
     .icon-link a:hover img { opacity: 0.8; }
 
@@ -135,20 +143,8 @@ const latestImages = projects
     }
 
     .preview-item { position: relative; }
-
-    .badge {
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background: rgba(255, 255, 255, 0.12);
-      color: #bbb;
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 3px 7px;
-      border-radius: 4px;
-      z-index: 1;
-    }
+    .preview-item a img { transition: opacity 0.2s; }
+    .preview-item a:hover img { opacity: 0.8; }
 
     .more-arrow {
       display: flex;
@@ -165,7 +161,7 @@ const latestImages = projects
 
     .contact {
       padding: 1.5rem 0 2rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
       border-top: 1px solid #2a2e35;
       width: 100%;
     }
@@ -206,10 +202,6 @@ const latestImages = projects
 
     .contact li a:hover { text-decoration: underline; }
 
-    .signal-item {
-      flex-basis: 100%;
-      justify-content: center;
-    }
     .row-break {
       flex-basis: 100%;
       height: 0;
@@ -236,27 +228,27 @@ const latestImages = projects
     <img
       class="avatar"
       src="https://res.cloudinary.com/det9ftymo/image/upload/w_200/v1725405810/photo_jn86fv.jpg"
-      alt="Bjørn A. Andersen"
+      alt=""
     />
     <h1>Bjørn A. Andersen</h1>
     <div class="icons">
       <div class="icon-link">
         <a href="/no/cv">
-          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="icon-img" alt="" />
+          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="icon-img" alt={tr.cv} />
+          <span>{tr.cv}</span>
         </a>
-        <span>{tr.cv}</span>
       </div>
       <div class="icon-link">
         <a href="https://grabcad.com/bjorn.a.andersen-1">
-          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282528/3D_printer_dbzhhj.svg?v=2" class="icon-img" alt="" />
+          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282528/3D_printer_dbzhhj.svg?v=2" class="icon-img" alt={tr.models} />
+          <span>{tr.models}</span>
         </a>
-        <span>{tr.models}</span>
       </div>
       <div class="icon-link">
         <a href="/gallery">
-          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772283848/photo-gallery_pe3tke.svg" class="icon-img" alt="" />
+          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772283848/photo-gallery_pe3tke.svg" class="icon-img" alt={tr.gallery} />
+          <span>{tr.gallery}</span>
         </a>
-        <span>{tr.gallery}</span>
       </div>
     </div>
   </section>
@@ -270,10 +262,12 @@ const latestImages = projects
 
     <div class="preview">
       <div class="preview-grid">
-        {latestImages.map((img, i) => (
+        {latestImages.map((img) => (
           <div class="preview-item">
-            {i === 0 && <span class="badge">Siste</span>}
-            <img src={cloudinaryUrl(img.url, { width: 120 })} alt={img.alt} loading="lazy" />
+            {img.link
+              ? <a href={img.link} target="_blank" rel="noopener"><img src={cloudinaryUrl(img.url, { width: 120 })} alt={img.alt} loading="lazy" /></a>
+              : <img src={cloudinaryUrl(img.url, { width: 120 })} alt={img.alt} loading="lazy" />
+            }
           </div>
         ))}
         <a href="/gallery" class="more-arrow" title="Se alle modeller">
