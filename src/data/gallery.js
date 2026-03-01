@@ -1,3 +1,7 @@
+export function cloudinaryUrl(url, { width = 800, quality = 'auto' } = {}) {
+  return url.replace('/image/upload/', `/image/upload/w_${width},f_auto,q_${quality}/`);
+}
+
 export const projects = [
   {
     title: "Raspberry Pi DIN Rail Mounts",
