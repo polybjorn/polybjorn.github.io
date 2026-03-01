@@ -392,6 +392,22 @@ export const projects = [
     category: "decorative",
     images: [
       {
+        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772378422/45af70df-307f-480b-8ae8-50d02a1b9a3c_r6rr7d.jpg",
+        alt: "Calendar with stand",
+        title: "Calendar with Stand",
+        type: "photo",
+        transparent: false,
+        link: null,
+      },
+      {
+        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772378422/91772ed9-6b8f-41fe-8ae8-2b9beafb31af_y80zae.jpg",
+        alt: "LFC trophy",
+        title: "LFC Trophy",
+        type: "photo",
+        transparent: false,
+        link: null,
+      },
+      {
         url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772368654/Lindesnes_coat_of_arms_render_sf1qnt.png",
         alt: "Norwegian municipal coat of arms plaques",
         title: "Norwegian Municipal Coat of Arms",
