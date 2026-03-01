@@ -21,8 +21,8 @@ export const cv = {
       period: "2022 – 2024"
     },
     {
-      en: { title: "Substitute instructor", org: "Skap Kreativ Folkehøyskole", desc: "Maintenance of 3D printers, CNC and laser. Supported student projects, workshop improvements and teaching. Produced furniture and gifts for speakers." },
-      no: { title: "Vikarierende lærer og assistent", org: "Skap Kreativ Folkehøyskole", desc: "Vedlikehold av 3D-printere, CNC og laser. Støttet studentprosjekter, verkstedforbedringer og undervisning. Produserte møbler og gaver til foredragsholdere." },
+      en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Maintenance of 3D printers, CNC and laser. Supported student projects, workshop improvements and teaching. Produced furniture and gifts for speakers." },
+      no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Vedlikehold av 3D-printere, CNC og laser. Støttet studentprosjekter, verkstedforbedringer og undervisning. Produserte møbler og gaver til foredragsholdere." },
       period: "2018 – 2023"
     },
     {
@@ -49,13 +49,13 @@ export const cv = {
     },
   ],
   skills: {
-    en: ["3D modelling — direct and parametric", "Mechanical / product design", "Image editing — vector and pixel based", "Technical documentation", "System administration", "Training / knowledge transfer / technical support", "Design / operation of workshop and production equipment"],
-    no: ["3D modellering — direkte og parametrisk", "Mekanisk / produktdesign", "Bilderedigering — vektor og pixelbasert", "Teknisk dokumentasjon", "Systemadministrasjon", "Opplæring / videreformidling / teknisk support", "Design / drift av verksted og produksjonsutstyr"],
+    en: ["3D modelling — direct and parametric", "3D scanning", "Design / operation of workshop and production equipment", "Image editing — vector and pixel based", "Laser cutting / CNC machining", "Mechanical / product design", "System administration", "Technical documentation", "Training / knowledge transfer / technical support"],
+    no: ["3D modellering — direkte og parametrisk", "3D-skanning", "Design / drift av verksted og produksjonsutstyr", "Bilderedigering — vektor og pixelbasert", "Laserkutting / CNC-bearbeiding", "Mekanisk / produktdesign", "Systemadministrasjon", "Teknisk dokumentasjon", "Opplæring / videreformidling / teknisk support"],
   },
   software: {
     en: {
-      "3D Modelling": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD"],
-      "Fabrication & Slicing": ["Bambu Lab", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Strecs3D", "3D Gence"],
+      "3D Modelling": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD", "Tinkercad"],
+      "Fabrication & Slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "Shining 3D", "Strecs3D"],
       "Graphic Design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
       "Publishing & Writing": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operating Systems": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
@@ -65,8 +65,8 @@ export const cv = {
       "AI Tools": ["ChatGPT", "Claude", "Midjourney", "Ollama", "Perplexity"],
     },
     no: {
-      "3D modellering": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD"],
-      "Fabrikasjon og slicing": ["Bambu Lab", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Strecs3D", "3D Gence"],
+      "3D modellering": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD", "Tinkercad"],
+      "Fabrikasjon og slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "Shining 3D", "Strecs3D"],
       "Grafisk design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
       "Publisering og skriving": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operativsystemer": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
