@@ -237,7 +237,7 @@ const latestImages = projects
   <section class="hero">
     <img
       class="avatar"
-      src="https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_gen_fill,w_360,h_360/v1725405810/photo_jn86fv.jpg"
+      src="https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_gen_fill,w_200,f_auto,q_auto/v1725405810/photo_jn86fv.jpg"
       alt="Bjørn A. Andersen"
     />
     <h1>Bjørn A. Andersen</h1>
@@ -275,7 +275,7 @@ const latestImages = projects
         {latestImages.map((img, i) => (
           <div class="preview-item">
             {i === 0 && <span class="badge">Latest</span>}
-            <img src={cloudinaryUrl(img.url, { width: 240 })} alt={img.alt} loading="lazy" />
+            <img src={cloudinaryUrl(img.url, { width: 120 })} alt={img.alt} loading="lazy" />
           </div>
         ))}
         <a href="/gallery" class="more-arrow" title="View all models">
