@@ -70,7 +70,9 @@ const featuredImages = [
 
     .icons {
       display: flex;
-      gap: 3rem;
+      width: 100%;
+      max-width: 400px;
+      justify-content: space-evenly;
       margin-top: 0.8rem;
       margin-bottom: 1rem;
     }
@@ -299,15 +301,15 @@ const featuredImages = [
     <h1>Bjørn A. Andersen</h1>
     <div class="icons">
       <div class="icon-link">
-        <a href="/no/cv">
-          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="icon-img" alt="" />
-          <span>{tr.cv}</span>
-        </a>
-      </div>
-      <div class="icon-link">
         <a href="https://grabcad.com/bjorn.a.andersen-1">
           <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282528/3D_printer_dbzhhj.svg?v=2" class="icon-img" alt="" />
           <span>{tr.models}</span>
+        </a>
+      </div>
+      <div class="icon-link">
+        <a href="/no/cv">
+          <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="icon-img" alt="" />
+          <span>{tr.cv}</span>
         </a>
       </div>
       <div class="icon-link gallery-dropdown" id="gallery-icon">
