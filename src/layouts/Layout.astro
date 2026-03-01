@@ -63,26 +63,38 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
         "url": "https://polybjorn.com"
       }
     }])} />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
     <slot name="head" />
     <style>
       .lang-toggle {
         position: fixed;
         top: 1rem;
         right: 1rem;
-        color: #888;
         text-decoration: none;
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        transition: color 0.2s;
         z-index: 100;
-        font-family: 'Piazzolla', serif;
+        opacity: 0.75;
+        transition: opacity 0.3s, transform 0.3s;
+        line-height: 1;
       }
-      .lang-toggle:hover { color: #fff; }
+      .lang-toggle:hover { opacity: 1; }
+      .lang-toggle.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-0.5rem);
+      }
+      .lang-toggle .fi {
+        width: 1.75rem;
+        height: 1.25rem;
+        border-radius: 4px;
+        display: block;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
-    <a class="lang-toggle" href={otherUrl}>{otherLang.toUpperCase()}</a>
+    <a class="lang-toggle" href={otherUrl} title={otherLang === 'no' ? 'Norsk' : 'English'}>
+      <span class={`fi fi-${otherLang === 'no' ? 'no' : 'eu'}`}></span>
+    </a>
     <slot />
     <script define:vars={{ lang }}>
       if (lang === 'en' && !localStorage.getItem('lang')) {
@@ -94,6 +106,11 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
       document.querySelector('.lang-toggle').addEventListener('click', () => {
         localStorage.setItem('lang', {lang} === 'en' ? 'no' : 'en');
       });
+
+      const flag = document.querySelector('.lang-toggle');
+      window.addEventListener('scroll', () => {
+        flag.classList.toggle('hidden', window.scrollY > 60);
+      }, { passive: true });
     </script>
   </body>
 </html>

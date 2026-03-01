@@ -81,6 +81,58 @@ const featuredImages = [
       align-items: center;
       gap: 0.15rem;
       cursor: pointer;
+      position: relative;
+    }
+
+    .gallery-dropdown {
+      position: relative;
+    }
+
+    .gallery-dropdown .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2a2e35;
+      border: 1px solid #3a3f48;
+      border-radius: 8px;
+      padding: 0.4rem 0;
+      display: none;
+      flex-direction: column;
+      min-width: 110px;
+      z-index: 10;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .gallery-dropdown .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -0.6rem;
+      left: 0;
+      right: 0;
+      height: 0.6rem;
+    }
+
+    .gallery-dropdown:hover .dropdown-menu,
+    .gallery-dropdown.open .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.45rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #dde1e7;
+      text-decoration: none;
+      transition: color 0.15s, background 0.15s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:hover {
+      color: #fff;
+      background: #33383f;
     }
 
     .icon-link span {
@@ -89,6 +141,7 @@ const featuredImages = [
       text-transform: uppercase;
       color: #888;
       transition: color 0.2s;
+      font-family: 'Piazzolla', serif;
     }
 
     .icon-link:hover span { color: #fff; }
@@ -257,11 +310,15 @@ const featuredImages = [
           <span>{tr.models}</span>
         </a>
       </div>
-      <div class="icon-link">
-        <a href="/gallery">
+      <div class="icon-link gallery-dropdown" id="gallery-icon">
+        <button onclick="document.getElementById('gallery-icon').classList.toggle('open')" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0.15rem;padding:0;font-family:'Piazzolla',serif;">
           <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772283848/photo-gallery_pe3tke.svg" class="icon-img" alt="" />
           <span>{tr.gallery}</span>
-        </a>
+        </button>
+        <div class="dropdown-menu">
+          <a href="/no/gallery/made">Laget</a>
+          <a href="/no/gallery/found">Funnet</a>
+        </div>
       </div>
     </div>
   </section>
@@ -283,7 +340,7 @@ const featuredImages = [
             }
           </div>
         ))}
-        <a href="/gallery" class="more-arrow" title="Se alle modeller">
+        <a href="/no/gallery/made" class="more-arrow" title="Se alle modeller">
           <ArrowRight size={36} strokeWidth={1.5} />
         </a>
       </div>
@@ -313,5 +370,10 @@ const featuredImages = [
     const email = atob('YmphbmRhQHBtLm1l');
     document.getElementById('phone').textContent = phone;
     document.getElementById('email').textContent = email;
+
+    document.addEventListener('click', (e) => {
+      const el = document.getElementById('gallery-icon');
+      if (!el.contains(e.target)) el.classList.remove('open');
+    });
   </script>
 </Layout>
