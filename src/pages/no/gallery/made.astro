@@ -3,9 +3,10 @@ import Layout from '../../../layouts/Layout.astro';
 import { projects, cloudinaryUrl } from '../../../data/gallery.js';
 
 const lang = 'no';
-const allImages = projects.flatMap(p =>
-  p.images.map(img => ({ ...img, project: p.title }))
-);
+const flat = projects.flatMap(p => p.images.map(img => ({ ...img, project: p.title })));
+const seed = 42;
+const seeded = (n) => { let x = Math.sin(n + seed) * 10000; return x - Math.floor(x); };
+const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) => a.sort - b.sort).map(x => x.img);
 ---
 
 <Layout lang={lang} title="Gallery – Bjørn A. Andersen" description="Gallery of 3D models, prints, and renders by Bjørn A. Andersen.">
