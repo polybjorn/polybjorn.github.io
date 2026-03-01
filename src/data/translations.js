@@ -18,7 +18,7 @@ export const t = {
     references: "References available on request",
   },
   no: {
-    bio1: "Jeg jobber med 3D-modellering, additiv produksjon og grafisk design — fra første skisse til ferdig produkt. Jeg holder også praktiske kurs i 3D-printing og design. Variasjonen i arbeidet er det som gjør det interessant, og jeg hjelper gjerne med å finne ut hva som er mulig.",
+    bio1: "Jeg liker å lage ting — og å finne ut hvordan. Arbeidet mitt spenner over design, fabrikasjon, elektronikk og programvare, fra første idé til ferdig produkt. Jeg holder også kurs for de som vil bli kjent med verktøyene og prosessen.",
     bio2: "Jeg deler redigerbare design under en fri og åpen lisens når det er mulig.",
     bio3: "Holder for tiden til på",
     models: "Modeller",
