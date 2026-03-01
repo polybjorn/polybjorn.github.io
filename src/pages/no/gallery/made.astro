@@ -48,6 +48,12 @@ const allImages = projects.flatMap(p =>
     .grid {
       columns: 4;
       gap: 1rem;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .grid.ready {
+      opacity: 1;
     }
 
     .grid-item {
@@ -119,17 +125,17 @@ const allImages = projects.flatMap(p =>
       <a class="back" href="/no/gallery/found">Funnet →</a>
     </div>
     <h1 class="sr-only">Laget</h1>
-    <div class="grid">
+    <div class="grid" id="grid">
       {allImages.map(img => (
-<div class={`grid-item ${img.transparent ? 'transparent' : 'opaque'}`}>
-  {img.link
-    ? <a href={img.link} target="_blank" rel="noopener" aria-label={img.title}><img src={cloudinaryUrl(img.url, { width: 600 })} alt="" loading="lazy" /></a>
-    : <img src={cloudinaryUrl(img.url, { width: 600 })} alt={img.alt} loading="lazy" />
-  }
-  <div class="overlay">
-    <span class="overlay-title">{img.title}</span>
-  </div>
-</div>
+        <div class={`grid-item ${img.transparent ? 'transparent' : 'opaque'}`}>
+          {img.link
+            ? <a href={img.link} target="_blank" rel="noopener" aria-label={img.title}><img src={cloudinaryUrl(img.url, { width: 600 })} alt="" loading="lazy" /></a>
+            : <img src={cloudinaryUrl(img.url, { width: 600 })} alt={img.alt} loading="lazy" />
+          }
+          <div class="overlay">
+            <span class="overlay-title">{img.title}</span>
+          </div>
+        </div>
       ))}
     </div>
   </div>
@@ -139,4 +145,25 @@ const allImages = projects.flatMap(p =>
     <a class="back" href="/no/gallery/found">Funnet →</a>
   </div>
   </main>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const imgs = Array.from(grid.querySelectorAll('img'));
+    let loaded = 0;
+    const threshold = Math.min(imgs.length, 8);
+
+    const reveal = () => {
+      loaded++;
+      if (loaded >= threshold) {
+        requestAnimationFrame(() => grid.classList.add('ready'));
+      }
+    };
+
+    imgs.slice(0, threshold).forEach(img => {
+      if (img.complete) reveal();
+      else { img.addEventListener('load', reveal); img.addEventListener('error', reveal); }
+    });
+
+    setTimeout(() => grid.classList.add('ready'), 3000);
+  </script>
 </Layout>
