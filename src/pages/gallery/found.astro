@@ -29,6 +29,11 @@ const foundImages = found;
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+    .current {
+      color: #fff;
+      pointer-events: none;
+      border-bottom: 1px solid #fff;
+    }
 
     @media (max-width: 700px) {
       .back {
@@ -81,7 +86,8 @@ const foundImages = found;
     <div class="wrap">
       <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
         <a class="back" href="/">← Back</a>
-        <a class="back" href="/gallery/made">Made →</a>
+        <a class="back" href="/gallery/made">Made</a>
+        <span class="back current">Found</span>
       </div>
       <h1 class="sr-only">Found</h1>
       <div class="grid" id="grid">
