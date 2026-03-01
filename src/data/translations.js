@@ -18,7 +18,7 @@ export const t = {
     references: "References available on request",
   },
   no: {
-    bio1: "Jeg liker å lage ting — og å finne ut hvordan. Arbeidet mitt spenner over design, fabrikasjon, elektronikk og programvare, fra første idé til ferdig produkt. Jeg holder også kurs for de som vil bli kjent med verktøyene og prosessen.",
+    bio1: "Jeg liker å lage ting — og å finne ut hvordan. Jeg jobber innen design, fabrikasjon, elektronikk og programvare, fra første idé til ferdig produkt. Jeg holder også kurs for de som vil bli kjent med verktøyene og prosessen.",
     bio2: "Jeg deler redigerbare design under en fri og åpen lisens når det er mulig.",
     bio3: "Holder for tiden til på",
     models: "Modeller",
