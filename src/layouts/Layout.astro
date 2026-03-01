@@ -33,7 +33,7 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <!-- JSON-LD -->
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script type="application/ld+json" set:html={JSON.stringify([{
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Bjørn A. Andersen",
@@ -50,14 +50,19 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
         "addressLocality": "Haugesund",
         "addressCountry": "NO"
       },
-      "knowsAbout": ["3D modelling", "3D printing", "Additive manufacturing", "Graphic design"],
-      "offers": {
-        "@type": "Service",
-        "name": "3D Printing Courses",
-        "description": "Hands-on courses in 3D printing and design.",
-        "areaServed": "NO"
+      "knowsAbout": ["3D modelling", "3D printing", "Additive manufacturing", "Graphic design"]
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "3D Printing Courses",
+      "description": "Hands-on courses in 3D printing and design.",
+      "areaServed": "NO",
+      "provider": {
+        "@type": "Person",
+        "name": "Bjørn A. Andersen",
+        "url": "https://polybjorn.com"
       }
-    })} />
+    }])} />
     <slot name="head" />
     <style>
       .lang-toggle {
