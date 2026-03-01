@@ -29,14 +29,21 @@ const allImages = projects.flatMap(p =>
 
     .back {
       display: inline-block;
-      margin-bottom: 2rem;
-      color: #888;
+      margin-bottom: 0rem;
+      color: #ccc;
       text-decoration: none;
       font-size: 0.85rem;
       letter-spacing: 0.05em;
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+
+    @media (max-width: 700px) {
+      .back {
+        font-size: 1rem;
+        color: #ccc;
+      }
+    }
 
     .grid {
       columns: 4;
