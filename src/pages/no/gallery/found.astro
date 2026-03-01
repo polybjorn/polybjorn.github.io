@@ -21,13 +21,20 @@ const lang = 'no';
     }
     .back {
       display: inline-block;
-      color: #888;
+      color: #ccc;
       text-decoration: none;
       font-size: 0.85rem;
       letter-spacing: 0.05em;
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+
+    @media (max-width: 700px) {
+      .back {
+        font-size: 1rem;
+        color: #ccc;
+      }
+    }
     .grid {
       columns: 4;
       gap: 1rem;
