@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { found, cloudinaryUrl } from '../../data/found.js';
 const lang = 'en';
+const foundImages = found;
 ---
 
 <Layout lang={lang} title="Found – Bjørn A. Andersen" description="Personal photography and free time captures by Bjørn A. Andersen.">
@@ -39,6 +40,12 @@ const lang = 'en';
       columns: 4;
       gap: 1rem;
       margin-top: 2rem;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .grid.ready {
+      opacity: 1;
     }
     .grid-item {
       position: relative;
@@ -77,7 +84,7 @@ const lang = 'en';
         <a class="back" href="/gallery/made">Made →</a>
       </div>
       <h1 class="sr-only">Found</h1>
-      <div class="grid">
+      <div class="grid" id="grid">
         {found.map(img => (
           <div class="grid-item">
             <img src={cloudinaryUrl(img.url, { width: 600 })} alt={img.alt} loading="lazy" />
@@ -92,4 +99,16 @@ const lang = 'en';
     </div>
   </main>
 
+  <script>
+    const grid = document.getElementById('grid');
+    const imgs = Array.from(grid.querySelectorAll('img'));
+    let loaded = 0;
+    const threshold = Math.min(imgs.length, 8);
+    const reveal = () => { loaded++; if (loaded >= threshold) requestAnimationFrame(() => grid.classList.add('ready')); };
+    imgs.slice(0, threshold).forEach(img => {
+      if (img.complete) reveal();
+      else { img.addEventListener('load', reveal); img.addEventListener('error', reveal); }
+    });
+    setTimeout(() => grid.classList.add('ready'), 3000);
+  </script>
 </Layout>
