@@ -54,16 +54,26 @@ export const cv = {
   },
   software: {
     en: {
-      "3D Modelling & Additive Manufacturing": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "FreeCAD", "Blender", "OpenSCAD", "Prusa", "Bambu Lab", "3D Gence", "Raise3D", "Elegoo", "Cura"],
-      "Graphic Design & Publishing": ["Affinity Publisher", "Affinity Photo", "Affinity Designer", "Adobe Photoshop", "Adobe InDesign", "Adobe Illustrator"],
-      "Operating Systems": ["Windows", "macOS", "Ubuntu", "Arch", "Android", "Proxmox"],
-      "Infrastructure & Automation": ["Docker", "Ansible", "n8n", "Bitwarden", "Tailscale", "tmux"],
+      "3D Modelling": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD"],
+      "Fabrication & Slicing": ["Bambu Lab", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Strecs3D", "3D Gence"],
+      "Graphic Design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
+      "Publishing & Writing": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
+      "Operating Systems": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
+      "Infrastructure & Servers": ["Ansible", "Docker", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
+      "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Sublime Merge", "Sublime Text", "Umami"],
+      "Privacy & Security": ["KeePass", "Librewolf", "Thunderbird"],
+      "AI Tools": ["ChatGPT", "Claude", "Midjourney", "Ollama", "Perplexity"],
     },
     no: {
-      "3D modellering og additiv produksjon": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "FreeCAD", "Blender", "OpenSCAD", "Prusa", "Bambu Lab", "3D Gence", "Raise3D", "Elegoo", "Cura"],
-      "Grafisk design og publisering": ["Affinity Publisher", "Affinity Photo", "Affinity Designer", "Adobe Photoshop", "Adobe InDesign", "Adobe Illustrator"],
-      "Operativsystemer": ["Windows", "macOS", "Ubuntu", "Arch", "Android", "Proxmox"],
-      "Infrastruktur og automasjon": ["Docker", "Ansible", "n8n", "Bitwarden", "Tailscale", "tmux"],
+      "3D modellering": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD"],
+      "Fabrikasjon og slicing": ["Bambu Lab", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Strecs3D", "3D Gence"],
+      "Grafisk design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
+      "Publisering og skriving": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
+      "Operativsystemer": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
+      "Infrastruktur og servere": ["Ansible", "Docker", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
+      "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Sublime Merge", "Sublime Text", "Umami"],
+      "Personvern og sikkerhet": ["KeePass", "Librewolf", "Thunderbird"],
+      "AI-verktøy": ["ChatGPT", "Claude", "Midjourney", "Ollama", "Perplexity"],
     }
   }
 }
