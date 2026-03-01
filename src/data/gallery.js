@@ -371,8 +371,8 @@ export const projects = [
     images: [
       {
         url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772369749/Statisk_mikser_render_ggpekn.png",
-        alt: "Static mixer",
-        title: "Static Mixer",
+        alt: "Static mixers",
+        title: "Static Mixers",
         type: "render",
         transparent: true,
         link: null,
