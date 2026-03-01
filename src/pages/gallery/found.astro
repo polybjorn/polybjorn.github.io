@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { found, cloudinaryUrl } from '../../data/found.js';
 const lang = 'en';
 ---
 
@@ -11,19 +12,15 @@ const lang = 'en';
       background: #1e2228;
       color: #dde1e7;
       font-family: 'Piazzolla', serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     .wrap {
       max-width: 1600px;
       width: 100%;
+      margin: 0 auto;
       padding: 2rem 1.5rem 4rem;
     }
     .back {
       display: inline-block;
-      margin-bottom: 2rem;
       color: #888;
       text-decoration: none;
       font-size: 0.85rem;
@@ -31,27 +28,60 @@ const lang = 'en';
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
-    .empty {
-      text-align: center;
-      color: #555;
-      margin-top: 6rem;
-      font-size: 1rem;
+    .grid {
+      columns: 4;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .grid-item {
+      position: relative;
+      margin-bottom: 1rem;
+      break-inside: avoid;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    @media (max-width: 700px) {
+      .grid { columns: 2; }
+    }
+    @media (max-width: 400px) {
+      .grid { columns: 1; }
     }
   </style>
 
   <main>
     <div class="wrap">
-    <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
-      <a class="back" href="/">← Back</a>
-      <a class="back" href="/gallery/made">Made →</a>
-    </div>
-    <h1 class="sr-only">Found</h1>
-      <div class="empty">Coming soon.</div>
-      <div style="display:flex;justify-content:center;gap:3rem;padding:2rem 0 3rem;">
+      <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
         <a class="back" href="/">← Back</a>
-        <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Top</a>
         <a class="back" href="/gallery/made">Made →</a>
       </div>
+      <h1 class="sr-only">Found</h1>
+      <div class="grid">
+        {found.map(img => (
+          <div class="grid-item">
+            <img src={cloudinaryUrl(img.url, { width: 600 })} alt={img.alt} loading="lazy" />
+          </div>
+        ))}
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:3rem;padding:2rem 0 3rem;">
+      <a class="back" href="/">← Back</a>
+      <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Top</a>
+      <a class="back" href="/gallery/made">Made →</a>
     </div>
   </main>
 
