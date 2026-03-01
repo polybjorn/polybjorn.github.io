@@ -12,7 +12,7 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <title>{title}</title>
@@ -68,6 +68,12 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
     <slot name="head" />
     <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+      }
       .lang-toggle {
         position: fixed;
         top: 1rem;
