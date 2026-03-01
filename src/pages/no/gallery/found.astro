@@ -1,0 +1,57 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+const lang = 'no';
+---
+
+<Layout lang={lang} title="Funnet – Bjørn A. Andersen" description="Personlig fotografi og fritidsbilder av Bjørn A. Andersen.">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1e2228;
+      color: #dde1e7;
+      font-family: 'Piazzolla', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrap {
+      max-width: 1600px;
+      width: 100%;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .back {
+      display: inline-block;
+      color: #888;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .back:hover { color: #fff; }
+    .empty {
+      text-align: center;
+      color: #555;
+      margin-top: 6rem;
+      font-size: 1rem;
+    }
+  </style>
+
+  <main>
+    <div class="wrap">
+      <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
+        <a class="back" href="/no">← Tilbake</a>
+        <a class="back" href="/no/gallery/made">Laget →</a>
+      </div>
+      <h1 class="sr-only">Funnet</h1>
+      <div class="empty">Kommer snart.</div>
+      <div style="display:flex;justify-content:center;gap:3rem;padding:2rem 0 3rem;">
+        <a class="back" href="/no">← Tilbake</a>
+        <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topp</a>
+        <a class="back" href="/no/gallery/made">Laget →</a>
+      </div>
+    </div>
+  </main>
+
+</Layout>
