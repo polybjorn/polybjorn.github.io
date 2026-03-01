@@ -178,10 +178,14 @@ const featuredImages = [
     .more-arrow:hover { color: #dde1e7; }
 
     .contact {
-      padding: 1.5rem 0 2rem;
-      margin-top: 2rem;
-      border-top: 1px solid #2a2e35;
+      padding: 1.5rem 0;
+      margin-top: 0;
       width: 100%;
+    }
+
+    .divider {
+      border-top: 1px solid #2a2e35;
+      margin: 1.5rem 0;
     }
 
     .contact h2 {
@@ -279,6 +283,20 @@ const featuredImages = [
       <p>{tr.bio4}</p>
     </div>
 
+    <div class="contact">
+      <p style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">3D-printing · 3D-modellering · Fabrikasjon · Design · Haugesund · Haugalandet · Rogaland</p>
+      <div class="contact-row">
+        <span class="contact-item"><Phone size={18} strokeWidth={1.5} style="color: #4CAF82;" /> <span id="phone"></span></span>
+        <span class="contact-item">
+          <MessageCircle size={18} strokeWidth={1.5} style="color: #6aaeee;" />
+          <a href="https://signal.me/#eu/bjanda.60">{tr.signal}</a>
+        </span>
+        <span class="contact-item"><Mail size={18} strokeWidth={1.5} style="color: #E8A838;" /> <span id="email"></span></span>
+      </div>
+      <div class="contact-row"><span>{tr.bio3}<a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener" style="color:#6aaeee;">{location}</a></span></div>
+    </div>
+
+    <div class="divider"></div>
     <div class="preview">
       <div class="preview-grid">
         {featuredImages.map((img) => (
@@ -295,23 +313,14 @@ const featuredImages = [
       </div>
       <p style="margin-top:1rem;font-size:0.85rem;color:#666;">Jeg deler redigerbare design under en fri og <a href="https://creativecommons.org/licenses/by-sa/4.0/" style="color:#6aaeee;">åpen lisens</a> når det er mulig.</p>
     </div>
+    <div class="divider"></div>
 
     <div class="contact">
-      <p style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">3D-printing · 3D-modellering · Fabrikasjon · Design · Haugesund · Haugalandet · Rogaland</p>
-      <div class="contact-row"><span>{tr.bio3}<a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener" style="color:#6aaeee;">{location}</a></span></div>
       <div class="contact-row">
-        <span class="contact-item"><Phone size={18} strokeWidth={1.5} style="color: #4CAF82;" /> <span id="phone"></span></span>
-        <span class="contact-item"><Mail size={18} strokeWidth={1.5} style="color: #E8A838;" /> <span id="email"></span></span>
-        <span class="contact-item">
-          <MessageCircle size={18} strokeWidth={1.5} style="color: #6aaeee;" />
-          <a href="https://signal.me/#eu/polybjorn.99">{tr.signal}</a>
-        </span>
         <span class="contact-item">
           <Rss size={18} strokeWidth={1.5} style="color: #6364FF;" />
           <a href="https://social.polybjorn.com/@bjanda" rel="me">{tr.mastodon}</a>
         </span>
-      </div>
-      <div class="contact-row">
         <span class="contact-item">
           <Music size={18} strokeWidth={1.5} style="color: #EB743B;" />
           <a href="https://listenbrainz.org/user/driveway4514/stats/?range=this_year" target="_blank" rel="noopener">{tr.musicStats}</a>
