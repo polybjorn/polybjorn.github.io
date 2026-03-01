@@ -38,6 +38,11 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+    .current {
+      color: #fff;
+      pointer-events: none;
+      border-bottom: 1px solid #fff;
+    }
 
     @media (max-width: 700px) {
       .back {
@@ -123,7 +128,8 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
   <div class="wrap">
     <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
       <a class="back" href="/no">← Tilbake</a>
-      <a class="back" href="/no/gallery/found">Funnet →</a>
+      <span class="back current">Laget</span>
+      <a class="back" href="/no/gallery/found">Funnet</a>
     </div>
     <h1 class="sr-only">Laget</h1>
     <div class="grid" id="grid">
