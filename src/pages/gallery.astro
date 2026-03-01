@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { projects } from '../data/gallery.js';
+import { projects, cloudinaryUrl } from '../data/gallery.js';
 
 const lang = 'en';
 const allImages = projects.flatMap(p =>
@@ -101,13 +101,14 @@ const allImages = projects.flatMap(p =>
     }
   </style>
 
+  <main>
   <div class="wrap">
     <a class="back" href="/">← Back</a>
     <div class="grid">
       {allImages.map(img => (
 <div class={`grid-item ${img.transparent ? 'transparent' : 'opaque'}`}>
   {img.link && <a href={img.link} target="_blank" rel="noopener" class="grid-link" />}
-  <img src={img.url} alt={img.alt} loading="lazy" />
+  <img src={cloudinaryUrl(img.url, { width: 600 })} alt={img.alt} loading="lazy" />
   <div class="overlay">
     <span class="overlay-title">{img.title}</span>
   </div>
@@ -115,4 +116,5 @@ const allImages = projects.flatMap(p =>
       ))}
     </div>
   </div>
+  </main>
 </Layout>

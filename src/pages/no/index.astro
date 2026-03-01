@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../data/translations.js';
-import { projects } from '../../data/gallery.js';
+import { projects, cloudinaryUrl } from '../../data/gallery.js';
 import { ArrowRight, Mail, Phone, MessageCircle, Rss } from 'lucide-astro';
 
 const lang = 'no';
@@ -75,7 +75,7 @@ const latestImages = projects
       font-size: 0.55rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #666;
+      color: #888;
       transition: color 0.2s;
     }
 
@@ -141,7 +141,7 @@ const latestImages = projects
       top: 8px;
       left: 8px;
       background: rgba(255, 255, 255, 0.12);
-      color: #aaa;
+      color: #bbb;
       font-size: 0.65rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -186,7 +186,7 @@ const latestImages = projects
       justify-content: center;
       gap: 0.4rem 2rem;
       flex-wrap: wrap;
-      color: #aaa;
+      color: #bbb;
       font-size: 1.1rem;
     }
 
@@ -201,7 +201,7 @@ const latestImages = projects
       align-items: center;
       gap: 0.4rem;
       color: #6aaeee;
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     .contact li a:hover { text-decoration: underline; }
@@ -231,6 +231,7 @@ const latestImages = projects
     }
   </style>
 
+<main>
   <section class="hero">
     <img
       class="avatar"
@@ -272,7 +273,7 @@ const latestImages = projects
         {latestImages.map((img, i) => (
           <div class="preview-item">
             {i === 0 && <span class="badge">Siste</span>}
-            <img src={img.url} alt={img.alt} loading="lazy" />
+            <img src={cloudinaryUrl(img.url, { width: 240 })} alt={img.alt} loading="lazy" />
           </div>
         ))}
         <a href="/gallery" class="more-arrow" title="Se alle modeller">
@@ -298,6 +299,7 @@ const latestImages = projects
       </ul>
     </div>
   </div>
+</main>
 
   <script>
     const phone = atob('KzQ3IDk2OSAxMSA1ODc=');
