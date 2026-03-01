@@ -1,12 +1,60 @@
 ---
-const { lang = 'en' } = Astro.props;
+const { lang = 'en', title, description, image } = Astro.props;
 const otherLang = lang === 'en' ? 'no' : 'en';
 const otherUrl = lang === 'en' ? '/no' : '/';
+const path = Astro.url.pathname;
+const canonicalUrl = `https://polybjorn.com${path === '/' ? '' : path}`;
+const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_gen_fill,w_360,h_360/v1725405810/photo_jn86fv.jpg';
 ---
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href="https://polybjorn.com" />
+    <link rel="alternate" hreflang="no" href="https://polybjorn.com/no" />
+    <link rel="alternate" hreflang="x-default" href="https://polybjorn.com" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bjørn A. Andersen",
+      "url": "https://polybjorn.com",
+      "image": "https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_gen_fill,w_360,h_360/v1725405810/photo_jn86fv.jpg",
+      "sameAs": [
+        "https://grabcad.com/bjorn.a.andersen-1",
+        "https://social.polybjorn.com/@bjanda"
+      ],
+      "jobTitle": "3D Designer & Instructor",
+      "description": "3D modelling, additive manufacturing, graphic design, and hands-on 3D printing courses.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Haugesund",
+        "addressCountry": "NO"
+      },
+      "knowsAbout": ["3D modelling", "3D printing", "Additive manufacturing", "Graphic design"],
+      "offers": {
+        "@type": "Service",
+        "name": "3D Printing Courses",
+        "description": "Hands-on courses in 3D printing and design.",
+        "areaServed": "NO"
+      }
+    })} />
     <slot name="head" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
