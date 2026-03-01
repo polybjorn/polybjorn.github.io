@@ -1,17 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../data/translations.js';
-import { projects, cloudinaryUrl } from '../../data/gallery.js';
+import { cloudinaryUrl } from '../../data/gallery.js';
 import { Phone, Mail, MessageCircle, ArrowRight, Rss } from 'lucide-astro';
 
 const lang = 'no';
 const tr = t[lang];
 const location = "Røvær, Haugesund";
 
-const latestImages = projects
-  .flatMap(p => p.images)
-  .slice(-3)
-  .reverse();
+const featuredImages = [
+  {
+    url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772366987/GODMORGON_1_zpwoph.jpg",
+    alt: "GODMORGON bathroom cabinets",
+    link: "https://grabcad.com/library/cabinet-fronts-and-inserts-1",
+  },
+  {
+    url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772294254/Rat_Rig_V-Core_Pro_1.3_with_EVA_2.3.0_Titan_Aero_ljmwp4.png",
+    alt: "Rat Rig V-Core Pro with EVA 2 Titan Aero",
+    link: "https://grabcad.com/library/rat-rig-v-core-pro-1-3-with-eva-2-3-0-titan-aero-1",
+  },
+  {
+    url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772294718/Serving_boards_e15qaz.jpg",
+    alt: "Serving boards",
+    link: "https://grabcad.com/library/serving-boards-1",
+  },
+];
 ---
 
 <Layout lang={lang} title="Bjørn A. Andersen" description="3D-modellering, additiv produksjon og praktiske kurs i 3D-printing. Holder til på Røvær, Haugesund.">
@@ -262,7 +275,7 @@ const latestImages = projects
 
     <div class="preview">
       <div class="preview-grid">
-        {latestImages.map((img) => (
+        {featuredImages.map((img) => (
           <div class="preview-item">
             {img.link
               ? <a href={img.link} target="_blank" rel="noopener"><img src={cloudinaryUrl(img.url, { width: 120 })} alt={img.alt} loading="lazy" /></a>

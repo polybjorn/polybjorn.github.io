@@ -150,6 +150,28 @@ export const projects = [
     ]
   },
   {
+    title: "Cabinets",
+    category: "furniture",
+    images: [
+      {
+        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772366980/337d96de-12d7-4531-aefa-ac81739b1c52_aisnyn.jpg",
+        alt: "Hamran kitchen cabinets",
+        title: "Hamran Kitchen Cabinets",
+        type: "photo",
+        transparent: false,
+        link: "https://grabcad.com/library/cabinet-fronts-and-inserts-1",
+      },
+      {
+        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772366987/GODMORGON_1_zpwoph.jpg",
+        alt: "GODMORGON bathroom cabinets",
+        title: "GODMORGON Bathroom Cabinets",
+        type: "photo",
+        transparent: false,
+        link: "https://grabcad.com/library/cabinet-fronts-and-inserts-1",
+      },
+    ]
+  },
+  {
     title: "Tools & Everyday",
     category: "everyday",
     images: [
