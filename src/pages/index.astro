@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { t } from '../data/translations.js';
 import { cloudinaryUrl } from '../data/gallery.js';
-import { Phone, Mail, MessageCircle, ArrowRight, Rss } from 'lucide-astro';
+import { Phone, Mail, MessageCircle, ArrowRight, Rss, Music } from 'lucide-astro';
 
 const lang = 'en';
 const tr = t[lang];
@@ -193,24 +193,28 @@ const featuredImages = [
       text-align: center;
     }
 
-    .contact ul {
-      list-style: none;
+    .contact-row {
+      width: 100%;
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      gap: 0.4rem 2rem;
-      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
       color: #bbb;
       font-size: 1.1rem;
+      flex-wrap: wrap;
     }
 
-    .contact li {
+    .contact-row + .contact-row {
+      margin-top: 0.8rem;
+    }
+
+    .contact-item {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
     }
 
-    .contact li a {
+    .contact-item a {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -218,12 +222,12 @@ const featuredImages = [
       text-decoration: underline;
     }
 
-    .contact li a:hover { text-decoration: underline; }
+    .contact-item svg {
+      position: relative;
+      top: 2px;
+    }
 
-    .row-break {
-      flex-basis: 100%;
-      height: 0;
-    }    @media (max-width: 480px) {
+    @media (max-width: 480px) {
       body { height: auto; }
       h1 { font-size: 1.8rem; }
       .hero { min-height: auto; padding: 2rem 1rem 0.5rem; }
@@ -234,7 +238,7 @@ const featuredImages = [
       .icon-img { width: 32px; height: 32px; }
       .icons { gap: 0; }
       .icon-link span { color: #fff; }
-      .contact ul { gap: 0.4rem 1rem; font-size: 0.9rem; }
+      .contact ul { font-size: 0.9rem; }
       .preview-grid img { width: 90px; height: 90px; }
     }
   </style>
@@ -272,8 +276,7 @@ const featuredImages = [
   <div class="content">
     <div class="bio">
       <p>I like making things — and figuring out how to make them. I work across design, fabrication, electronics, and software, from initial concept to finished product. I also run courses for people who want to get hands-on with the tools and process.</p>
-      <p>Have a project in mind? I'd love to hear about it — get in touch.</p>
-      <p>{tr.bio3} <a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener">{location}</a>.</p>
+      <p>{tr.bio4}</p>
     </div>
 
     <div class="preview">
@@ -295,20 +298,25 @@ const featuredImages = [
 
     <div class="contact">
       <p style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">3D printing · 3D modelling · Fabrication · Design · Haugesund · Haugalandet · Rogaland</p>
-      <h2>{tr.contact}</h2>
-      <ul>
-        <li><Phone size={18} strokeWidth={1.5} style="color: #4CAF82;" /> <span id="phone"></span></li>
-        <li><Mail size={18} strokeWidth={1.5} style="color: #E8A838;" /> <span id="email"></span></li>
-        <li class="row-break"></li>
-        <li>
+      <div class="contact-row"><span>{tr.bio3}<a href="https://www.openstreetmap.org/#map=14/59.43849/5.09195" target="_blank" rel="noopener" style="color:#6aaeee;">{location}</a></span></div>
+      <div class="contact-row">
+        <span class="contact-item"><Phone size={18} strokeWidth={1.5} style="color: #4CAF82;" /> <span id="phone"></span></span>
+        <span class="contact-item"><Mail size={18} strokeWidth={1.5} style="color: #E8A838;" /> <span id="email"></span></span>
+        <span class="contact-item">
           <MessageCircle size={18} strokeWidth={1.5} style="color: #6aaeee;" />
           <a href="https://signal.me/#eu/polybjorn.99">{tr.signal}</a>
-        </li>
-        <li>
+        </span>
+        <span class="contact-item">
           <Rss size={18} strokeWidth={1.5} style="color: #6364FF;" />
           <a href="https://social.polybjorn.com/@bjanda" rel="me">{tr.mastodon}</a>
-        </li>
-      </ul>
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-item">
+          <Music size={18} strokeWidth={1.5} style="color: #EB743B;" />
+          <a href="https://listenbrainz.org/user/driveway4514/stats/?range=this_year" target="_blank" rel="noopener">{tr.musicStats}</a>
+        </span>
+      </div>
     </div>
   </div>
 </main>
