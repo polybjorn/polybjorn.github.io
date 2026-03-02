@@ -29,7 +29,7 @@ export const t = {
     contact: "Ta kontakt",
     signal: "Signal",
     mastodon: "Mastodon",
-    musicStats: "Musikkstatistikk",
+    musicStats: "Musikk",
     cv_title: "Curriculum Vitae",
     education: "Utdannelse",
     skills: "Ferdigheter",
