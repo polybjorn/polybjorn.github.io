@@ -70,9 +70,10 @@ export const cv = {
       "Publishing & Writing": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operating Systems": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
       "Infrastructure & Servers": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
-      "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Sublime Merge", "Sublime Text", "Umami"],
+      "Languages": ["Python", "JavaScript", "HTML", "SQL", "Markdown"],
+      "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
       "Privacy & Security": ["KeePass", "Librewolf", "Thunderbird"],
-      "AI Tools": ["ChatGPT", "Claude", "Midjourney", "Ollama", "Perplexity"],
+      "AI Tools": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     },
     no: {
       "3D modellering": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD", "Tinkercad"],
@@ -81,9 +82,10 @@ export const cv = {
       "Publisering og skriving": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Microsoft Office", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operativsystemer": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
       "Infrastruktur og servere": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
-      "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Sublime Merge", "Sublime Text", "Umami"],
+      "Språk": ["Python", "JavaScript", "HTML", "SQL", "Markdown"],
+      "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
       "Personvern og sikkerhet": ["KeePass", "Librewolf", "Thunderbird"],
-      "AI-verktøy": ["ChatGPT", "Claude", "Midjourney", "Ollama", "Perplexity"],
+      "AI-verktøy": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     }
   }
 }
