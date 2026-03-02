@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { t } from '../data/translations.js';
 import { cloudinaryUrl } from '../data/gallery.js';
-import { Phone, Mail, MessageCircle, ArrowRight, Rss, Music } from 'lucide-astro';
+import { Phone, Mail, MessageCircle, ArrowRight, Rss, Music, Github } from 'lucide-astro';
 
 const lang = 'en';
 const tr = t[lang];
@@ -325,6 +325,10 @@ const featuredImages = [
         <span class="contact-item">
           <Music size={18} strokeWidth={1.5} style="color: #EB743B;" />
           <a href="https://listenbrainz.org/user/driveway4514/stats/?range=this_year" target="_blank" rel="noopener">{tr.musicStats}</a>
+        </span>
+        <span class="contact-item">
+          <Github size={18} strokeWidth={1.5} style="color: #fff;" />
+          <a href="https://github.com/polybjorn/polybjorn.github.io" target="_blank" rel="noopener">GitHub</a>
         </span>
       </div>
     </div>
