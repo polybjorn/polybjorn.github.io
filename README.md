@@ -1,43 +1,27 @@
-# Astro Starter Kit: Minimal
+# polybjorn.com
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Personal website for Bjørn A. Andersen — 3D printing, CAD design, fabrication and courses based on Røvær, Haugesund.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## What this is
 
-## 🚀 Project Structure
+This is my personal portfolio and contact point. It lists who I am, what I do, where to find my work, and how to reach me. The site is deliberately minimal — no tracking, no ads, no frameworks beyond what's needed.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Stack
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **[Astro](https://astro.build)** — static site generator
+- **[GitHub Pages](https://pages.github.com)** — hosting
+- **[GitHub Actions](https://github.com/features/actions)** — automatic deployment on push
+- **[Cloudinary](https://cloudinary.com)** — image hosting and transformation
+- **[Cloudflare](https://cloudflare.com)** — DNS
+- **[Umami](https://umami.is)** — cookieless, privacy-friendly analytics
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Structure
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Bilingual — English and Norwegian. Gallery of made and found things. CV. All content lives in `src/data/` — gallery images, CV entries, and translations are plain JS objects, easy to edit.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Privacy
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- No cookies
+- No ads or third-party tracking
+- Analytics via Umami — cookieless, no personal data collected
+- Phone and email are base64-encoded in the HTML to reduce scraping
