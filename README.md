@@ -1,6 +1,6 @@
 # polybjorn.com
 
-Personal website for Bjørn A. Andersen — 3D printing, CAD design, fabrication and courses based on Røvær, Haugesund.
+Personal website for Bjørn A. Andersen.
 
 ## What this is
 
@@ -21,7 +21,6 @@ Bilingual — English and Norwegian. Gallery of made and found things. CV. All c
 
 ## Privacy
 
-- No cookies
 - No ads or third-party tracking
 - Analytics via Umami — cookieless, no personal data collected
 - Phone and email are base64-encoded in the HTML to reduce scraping
