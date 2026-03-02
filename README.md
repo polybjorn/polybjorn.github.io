@@ -21,4 +21,4 @@ Bilingual — English and Norwegian. Content is stored as plain JS objects, easy
 
 - No ads or third-party tracking
 - Analytics via Umami — cookieless, no personal data collected
-- base64-encoded information in the HTML to reduce scraping
+- Encoded information in the HTML to reduce scraping
