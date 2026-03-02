@@ -38,12 +38,22 @@ export const cv = {
       period: "2025 – 2026"
     },
     {
+      en: { title: "Network and System Administration", org: "Noroff, Online study" },
+      no: { title: "Nettverk- og Systemadministrasjon", org: "Noroff, Nettstudie" },
+      period: "2021 – 2022"
+    },
+    {
+      en: { title: "Student and stipendiat", org: "Skap Kreativ Folkehøyskole" },
+      no: { title: "Elev og stipendiat", org: "Skap Kreativ Folkehøyskole" },
+      period: "2018 – 2020"
+    },
+    {
       en: { title: "Upper secondary supplement", org: "Sonans, Bergen" },
       no: { title: "Påbygg", org: "Sonans, Bergen" },
       period: "2017 – 2018"
     },
     {
-      en: { title: "Electrical engineering", org: "Åkrehamn Videregående Skole" },
+      en: { title: "Electrical studies", org: "Åkrehamn Videregående Skole" },
       no: { title: "Elektrofag og Elenergi", org: "Åkrehamn Videregående Skole" },
       period: "2012 – 2014"
     },
