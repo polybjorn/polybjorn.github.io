@@ -4,7 +4,7 @@ Personal website for Bjørn A. Andersen.
 
 ## What this is
 
-This is my personal portfolio and contact point. It lists who I am, what I do, where to find my work, and how to reach me. The site is deliberately minimal — no tracking, no ads, no frameworks beyond what's needed.
+This is my personal portfolio and contact point. It lists who I am, what I do, where to find my work, and how to reach me. The site is deliberately minimal.
 
 ## Stack
 
