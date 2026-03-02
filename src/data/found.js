@@ -29,6 +29,7 @@ export const found = [
   { url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772377779/2aa774fb-640c-45be-b85d-ef0eed02858b_gtobzk.png", alt: "Photo" },
   { url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772377777/2a545b20-565d-47c0-9e97-e1af366f258d_ohcida.png", alt: "Photo" },
   { url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772377776/0c0da24d-4045-4eeb-8e9e-74fc62dff1bc_cld0vx.jpg", alt: "Photo" },
+  { url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772377775/0aaf85c9-2e37-4462-b954-0a88e335649f_nwdlar.jpg", alt: "Photo" },
 ];
 
 export function cloudinaryUrl(url, { width = 800, quality = 'auto' } = {}) {
