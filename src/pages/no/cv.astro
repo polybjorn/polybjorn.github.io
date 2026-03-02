@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../data/translations.js';
 import { cv } from '../../data/cv.js';
+import { ArrowUp, ArrowLeft } from 'lucide-astro';
 
 const lang = 'no';
 const tr = t[lang];
@@ -25,7 +26,7 @@ const tr = t[lang];
     .cv-wrap {
       max-width: 720px;
       width: 100%;
-      padding: 4rem 2rem 6rem;
+      padding: 4rem 2rem 4rem;
     }
 
     .cv-header {
@@ -46,7 +47,6 @@ const tr = t[lang];
 
     .back {
       display: inline-block;
-      margin-bottom: 2rem;
       color: #ccc;
       text-decoration: none;
       font-size: 0.85rem;
@@ -54,6 +54,44 @@ const tr = t[lang];
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+
+    .back-home {
+      position: fixed;
+      top: calc(1rem - 4px);
+      left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0.75;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+    }
+    .back-home:hover { opacity: 1; color: #fff; }
+    .back-home.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-0.5rem);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(0.5rem);
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+    }
+    .scroll-top.visible {
+      opacity: 0.75;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .scroll-top:hover { opacity: 1; color: #fff; }
 
     h1 {
       font-family: 'Piazzolla', serif;
@@ -177,14 +215,14 @@ const tr = t[lang];
         font-size: 0.8rem;
       }
       .cv-wrap {
-        padding: 2rem 1.5rem 4rem;
+        padding: 2rem 1.5rem 3rem;
       }
     }
   </style>
 
+  <a class="back-home" href="/no" aria-label="Tilbake til forsiden"><ArrowLeft size={28} strokeWidth={1.5} /></a>
   <main>
   <div class="cv-wrap">
-    <a class="back" href="/no">← Tilbake</a>
     <div class="cv-header">
       <div>
         <h1>Bjørn A. Andersen</h1>
@@ -246,9 +284,15 @@ const tr = t[lang];
     </section>
 
   </div>
-  <div style="display:flex;justify-content:center;gap:3rem;padding:0.75rem 0 3rem;">
-    <a class="back" href="/no">← Tilbake</a>
-    <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topp</a>
-  </div>
+  <a class="scroll-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Til toppen"><ArrowUp size={28} strokeWidth={1.5} /></a>
   </main>
+
+  <script>
+    const backHome = document.querySelector('.back-home');
+    const scrollTop = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      backHome.classList.toggle('hidden', window.scrollY > 60);
+      scrollTop.classList.toggle('visible', window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 200);
+    }, { passive: true });
+  </script>
 </Layout>

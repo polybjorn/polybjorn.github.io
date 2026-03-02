@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { projects, cloudinaryUrl } from '../../data/gallery.js';
+import { ArrowUp, ArrowLeft } from 'lucide-astro';
 
 const lang = 'en';
 const flat = projects.flatMap(p => p.images.map(img => ({ ...img, project: p.title })));
@@ -39,6 +40,45 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+
+    .back-home {
+      position: fixed;
+      top: calc(1rem - 4px);
+      left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0.75;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+    }
+    .back-home:hover { opacity: 1; color: #fff; }
+    .back-home.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-0.5rem);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+      transform: translateY(0.5rem);
+    }
+    .scroll-top.visible {
+      opacity: 0.75;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .scroll-top:hover { opacity: 1; color: #fff; }
+
     .current {
       color: #fff;
       pointer-events: none;
@@ -125,10 +165,10 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
     }
   </style>
 
+  <a class="back-home" href="/" aria-label="Back to home"><ArrowLeft size={28} strokeWidth={1.5} /></a>
   <main>
   <div class="wrap">
     <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
-      <a class="back" href="/">← Back</a>
       <span class="back current">Made</span>
       <a class="back" href="/gallery/found">Found</a>
     </div>
@@ -150,12 +190,21 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
   <div style="max-width:1600px;width:100%;margin:0 auto;padding:0 1.5rem 3rem;">
     <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772447680/Panorama_wk07xx.jpg" alt="Workshop" style="width:100%;border-radius:6px;display:block;" loading="lazy" />
   </div>
+  <a class="scroll-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Back to top"><ArrowUp size={28} strokeWidth={1.5} /></a>
   <div style="display:flex;justify-content:center;gap:3rem;padding:2rem 0 3rem;">
-    <a class="back" href="/">← Back</a>
-    <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Top</a>
-    <a class="back" href="/gallery/found">Found →</a>
+    <span class="back current">Made</span>
+    <a class="back" href="/gallery/found">Found</a>
   </div>
   </main>
+
+  <script>
+    const backHome = document.querySelector('.back-home');
+    const scrollTop = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      backHome.classList.toggle('hidden', window.scrollY > 60);
+      scrollTop.classList.toggle('visible', window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 200);
+    }, { passive: true });
+  </script>
 
   <script>
     const grid = document.getElementById('grid');

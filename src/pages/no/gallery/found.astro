@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { found, cloudinaryUrl } from '../../../data/found.js';
+import { ArrowUp, ArrowLeft } from 'lucide-astro';
 const lang = 'no';
 const foundImages = found;
 ---
@@ -29,6 +30,45 @@ const foundImages = found;
       transition: color 0.2s;
     }
     .back:hover { color: #fff; }
+
+    .back-home {
+      position: fixed;
+      top: calc(1rem - 4px);
+      left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0.75;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+    }
+    .back-home:hover { opacity: 1; color: #fff; }
+    .back-home.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-0.5rem);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      line-height: 1;
+      transform: translateY(0.5rem);
+    }
+    .scroll-top.visible {
+      opacity: 0.75;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .scroll-top:hover { opacity: 1; color: #fff; }
+
     .current {
       color: #fff;
       pointer-events: none;
@@ -82,10 +122,10 @@ const foundImages = found;
     }
   </style>
 
+  <a class="back-home" href="/no" aria-label="Tilbake til forsiden"><ArrowLeft size={28} strokeWidth={1.5} /></a>
   <main>
     <div class="wrap">
       <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2rem;">
-        <a class="back" href="/no">← Tilbake</a>
         <a class="back" href="/no/gallery/made">Laget</a>
         <span class="back current">Funnet</span>
       </div>
@@ -98,12 +138,21 @@ const foundImages = found;
         ))}
       </div>
     </div>
+  <a class="scroll-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Til toppen"><ArrowUp size={28} strokeWidth={1.5} /></a>
     <div style="display:flex;justify-content:center;gap:3rem;padding:2rem 0 3rem;">
-      <a class="back" href="/no">← Tilbake</a>
-      <a class="back" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topp</a>
-      <a class="back" href="/no/gallery/made">Laget →</a>
+      <a class="back" href="/no/gallery/made">Laget</a>
+      <span class="back current">Funnet</span>
     </div>
   </main>
+
+  <script>
+    const backHome = document.querySelector('.back-home');
+    const scrollTop = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      backHome.classList.toggle('hidden', window.scrollY > 60);
+      scrollTop.classList.toggle('visible', window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 200);
+    }, { passive: true });
+  </script>
 
   <script>
     const grid = document.getElementById('grid');
