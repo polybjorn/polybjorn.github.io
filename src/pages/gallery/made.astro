@@ -44,7 +44,7 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
     .back-home {
       position: fixed;
       top: calc(1rem - 4px);
-      left: 1rem;
+      left: max(1rem, env(safe-area-inset-left, 0px) + 0.5rem);
       color: #ccc;
       text-decoration: none;
       z-index: 100;
@@ -62,7 +62,7 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
     .scroll-top {
       position: fixed;
       bottom: 1rem;
-      left: 1rem;
+      left: max(1rem, env(safe-area-inset-left, 0px) + 0.5rem);
       color: #ccc;
       text-decoration: none;
       z-index: 100;
