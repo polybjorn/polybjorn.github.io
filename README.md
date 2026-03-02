@@ -17,7 +17,7 @@ This is my personal portfolio and contact point. It lists who I am, what I do, w
 
 ## Structure
 
-Bilingual — English and Norwegian. Gallery of made and found things. CV. All content lives in `src/data/` — gallery images, CV entries, and translations are plain JS objects, easy to edit.
+Bilingual — English and Norwegian. Content is stored as plain JS objects, easy to edit.
 
 ## Privacy
 
