@@ -72,7 +72,7 @@ export const cv = {
       "Infrastructure & Servers": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
       "Languages": ["Python", "JavaScript", "HTML", "SQL", "Markdown"],
       "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
-      "Privacy & Security": ["KeePass", "Librewolf", "Thunderbird"],
+      "Privacy & Security": ["KeePass", "Librewolf", "Thunderbird", "Wireguard"],
       "AI Tools": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     },
     no: {
@@ -84,7 +84,7 @@ export const cv = {
       "Infrastruktur og servere": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
       "Språk": ["Python", "JavaScript", "HTML", "SQL", "Markdown"],
       "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
-      "Personvern og sikkerhet": ["KeePass", "Librewolf", "Thunderbird"],
+      "Personvern og sikkerhet": ["KeePass", "Librewolf", "Thunderbird", "Wireguard"],
       "AI-verktøy": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     }
   }
