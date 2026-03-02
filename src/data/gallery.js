@@ -492,7 +492,7 @@ export const projects = [
     category: "everyday",
     images: [
       {
-        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772371110/Carburetor_float_v2_render_q02bqv.png",
+        url: "https://res.cloudinary.com/djpkffk5u/image/upload/v1772485498/Carburetor_float_v2_render_q02bqv.svg",
         alt: "Carburetor float",
         title: "Carburetor Float",
         type: "render",
