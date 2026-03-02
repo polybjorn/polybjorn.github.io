@@ -7,10 +7,10 @@ This is my personal portfolio and contact point. It lists who I am, what I do, w
 ## Stack
 
 - **[Astro](https://astro.build)** — static site generator
+- **[Cloudflare](https://cloudflare.com)** — DNS
+- **[Cloudinary](https://cloudinary.com)** — image hosting and transformation
 - **[GitHub Pages](https://pages.github.com)** — hosting
 - **[GitHub Actions](https://github.com/features/actions)** — automatic deployment on push
-- **[Cloudinary](https://cloudinary.com)** — image hosting and transformation
-- **[Cloudflare](https://cloudflare.com)** — DNS
 - **[Umami](https://umami.is)** — cookieless, privacy-friendly analytics
 
 ## Structure
