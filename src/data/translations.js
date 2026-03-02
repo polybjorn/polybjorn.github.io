@@ -10,7 +10,7 @@ export const t = {
     contact: "Get in touch",
     signal: "Signal",
     mastodon: "Mastodon",
-    musicStats: "Music stats",
+    musicStats: "Music",
     cv_title: "Curriculum Vitae",
     education: "Education",
     skills: "Skills",
