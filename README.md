@@ -15,9 +15,9 @@ This is my personal portfolio and contact point. It lists who I am, what I do, w
 
 ## Assets
 
-- **[Lucide](https://lucide.dev)** — icons
 - **[flag-icons](https://github.com/lipis/flag-icons)** — language toggle flags
 - **[Icons8](https://icons8.com)** — icons
+- **[Lucide](https://lucide.dev)** — icons
 - **[Piazzolla](https://fonts.google.com/specimen/Piazzolla)** — typeface
 
 ## Structure
