@@ -155,6 +155,41 @@ const tr = t[lang];
       line-height: 1.6;
     }
 
+    .entry-content .org a {
+      color: #6aaeee;
+      text-decoration: none;
+    }
+
+    .entry-content .org a:hover {
+      text-decoration: underline;
+    }
+
+    .entry-content .org .insta-link {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 0.4rem;
+      color: #c084fc;
+      vertical-align: middle;
+      transition: opacity 0.2s;
+    }
+
+    .entry-content .org .insta-link:hover {
+      opacity: 0.8;
+    }
+
+    .entry-content .org .fb-link {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 0.4rem;
+      color: #4a9edd;
+      vertical-align: middle;
+      transition: opacity 0.2s;
+    }
+
+    .entry-content .org .fb-link:hover {
+      opacity: 0.8;
+    }
+
     .skills-list {
       list-style: none;
       display: flex;
@@ -242,7 +277,26 @@ const tr = t[lang];
           <div class="period">{entry.period}</div>
           <div class="entry-content">
             <div class="title">{entry[lang].title}</div>
-            <div class="org">{entry[lang].org}</div>
+            <div class="org">
+              {entry.links?.website
+                ? <a href={entry.links.website} target="_blank" rel="noopener">{entry[lang].org}</a>
+                : entry[lang].org}
+              {entry.links?.instagram && (
+                <a href={entry.links.instagram} target="_blank" rel="noopener" class="insta-link" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+              )}
+              {entry.links?.facebook && (
+                <a href={entry.links.facebook} target="_blank" rel="noopener" class="fb-link" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path fill="currentColor" stroke="none" d="M13 10h2.5l-.5 2.5H13V18h-2.5v-5.5H9V10h1.5V8.5A2.5 2.5 0 0 1 13 6h2v2.5h-1.5a.5.5 0 0 0-.5.5V10z"/>
+                  </svg>
+                </a>
+              )}
+            </div>
             <div class="desc">{entry[lang].desc}</div>
           </div>
         </div>
