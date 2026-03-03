@@ -25,8 +25,8 @@ export const cv = {
       period: "2022 – 2024"
     },
     {
-      en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Wide-ranging role covering workshop operations and maintenance of 3D printers, CNC and laser equipment, day-to-day building operations, event and stand hosting, catering, student project support and teaching. Also produced furniture for students, staff, and the school, as well as gifts for guest speakers." },
-      no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Bred rolle: drift og vedlikehold av verksted med 3D-printere, CNC og laser, daglig bygningsdrift, arrangement- og standforberedelse og -vertskap, matlaging, veiledning av studentprosjekter og undervisning. Produserte også møbler til studenter, ansatte og skolen, samt gaver til foredragsholdere." },
+      en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Workshop operations and maintenance of 3D printers, CNC and laser equipment, day-to-day building operations, event and stand hosting, catering, student project support and teaching. Also produced furniture for students, staff, and the school, as well as gifts for guest speakers." },
+      no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Drift og vedlikehold av verksted med 3D-printere, CNC og laser, daglig bygningsdrift, arrangement- og standforberedelse og -vertskap, matlaging, veiledning av studentprosjekter og undervisning. Produserte også møbler til studenter, ansatte og skolen, samt gaver til foredragsholdere." },
       links: { website: "https://skapfhs.no", instagram: "https://instagram.com/skapfhs" },
       period: "2018 – 2023"
     },
