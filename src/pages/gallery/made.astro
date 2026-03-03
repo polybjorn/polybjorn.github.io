@@ -60,22 +60,14 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
     }
 
     .scroll-top {
-      position: fixed;
-      bottom: 1rem;
-      left: max(1rem, env(safe-area-inset-left, 0px) + 0.5rem);
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 0 0;
       color: #ccc;
       text-decoration: none;
-      z-index: 100;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s, transform 0.3s;
-      line-height: 1;
-      transform: translateY(0.5rem);
-    }
-    .scroll-top.visible {
       opacity: 0.75;
-      pointer-events: auto;
-      transform: translateY(0);
+      transition: opacity 0.3s, color 0.3s;
+      line-height: 1;
     }
     .scroll-top:hover { opacity: 1; color: #fff; }
 
@@ -202,7 +194,6 @@ const allImages = flat.map((img, i) => ({ img, sort: seeded(i) })).sort((a, b) =
     const scrollTop = document.querySelector('.scroll-top');
     window.addEventListener('scroll', () => {
       backHome.classList.toggle('hidden', window.scrollY > 60);
-      scrollTop.classList.toggle('visible', window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 200);
     }, { passive: true });
   </script>
 
