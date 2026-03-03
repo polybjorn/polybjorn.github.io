@@ -7,6 +7,8 @@ const otherLang = lang === 'en' ? 'no' : 'en';
 const otherUrl = lang === 'en' ? '/no' : '/';
 const path = Astro.url.pathname;
 const canonicalUrl = `https://polybjorn.com${path === '/' ? '' : path}`;
+const enUrl = lang === 'en' ? canonicalUrl : `https://polybjorn.com${path.replace(/^\/no/, '') || '/'}`;
+const noUrl = lang === 'no' ? canonicalUrl : `https://polybjorn.com/no${path === '/' ? '' : path}`;
 const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_rgb:1e2228,w_1200,h_630/v1725405810/photo_jn86fv.jpg';
 ---
 <html lang={lang}>
@@ -18,8 +20,8 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hreflang="en" href="https://polybjorn.com" />
-    <link rel="alternate" hreflang="no" href="https://polybjorn.com/no" />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="no" href={noUrl} />
     <link rel="alternate" hreflang="x-default" href="https://polybjorn.com" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -28,7 +30,7 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
     <!-- Twitter/X Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
