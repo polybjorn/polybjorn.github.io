@@ -13,6 +13,13 @@ This is my personal portfolio and contact point. It lists who I am, what I do, w
 - **[GitHub Actions](https://github.com/features/actions)** — automatic deployment on push
 - **[Umami](https://umami.is)** — cookieless, privacy-friendly analytics
 
+## Assets
+
+- **[Lucide](https://lucide.dev)** — icons
+- **[flag-icons](https://github.com/lipis/flag-icons)** — language toggle flags
+- **[Icons8](https://icons8.com)** — icons
+- **[Piazzolla](https://fonts.google.com/specimen/Piazzolla)** — typeface
+
 ## Structure
 
 Bilingual — English and Norwegian. Content is stored as plain JS objects, easy to edit.
