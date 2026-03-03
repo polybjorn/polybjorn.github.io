@@ -16,8 +16,8 @@ export const cv = {
       period: "2022 – 2024"
     },
     {
-      en: { title: "Technician", org: "Mandal Frivilligsentral", desc: "Established and ran Bua Makerspace — Prusa 3D printer farm and internet café. Technical support, courses and event responsibility." },
-      no: { title: "Tekniker", org: "Mandal Frivilligsentral", desc: "Etablerte og driftet Bua Makerspace i fellesskap - Prusa 3D-printerfarm og internettkafé. Teknisk støtte, kurs og arrangementsansvar." },
+      en: { title: "Technician", org: "Mandal Frivilligsentral", desc: "Helped build and run Bua Makerspace — Prusa 3D printer farm and internet café, open to the public. Technical support, courses and event responsibility." },
+      no: { title: "Tekniker", org: "Mandal Frivilligsentral", desc: "Bidro til å bygge og drifte Bua Makerspace - Prusa 3D-printerfarm og internettkafé, åpent for publikum. Teknisk støtte, kurs og arrangementsansvar." },
       period: "2022 – 2024"
     },
     {
