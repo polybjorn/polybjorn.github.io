@@ -76,7 +76,7 @@ export const cv = {
       "Operating Systems": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
       "Infrastructure & Servers": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
       "Languages": ["G-code", "HTML/CSS", "JavaScript", "Markdown", "Python", "SQL", "YAML"],
-      "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
+      "Development & Web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Text", "Umami"],
       "Privacy & Security": ["KeePass", "Librewolf", "Thunderbird", "Wireguard"],
       "AI Tools": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     },
@@ -88,7 +88,7 @@ export const cv = {
       "Operativsystemer": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
       "Infrastruktur og servere": ["Ansible", "Docker", "Grafana", "Home Assistant", "n8n", "nginx", "Portainer", "Syncthing", "Tailscale"],
       "Språk": ["G-code", "HTML/CSS", "JavaScript", "Markdown", "Python", "SQL", "YAML"],
-      "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Merge", "Sublime Text", "Umami"],
+      "Utvikling og web": ["Astro", "Cloudflare", "Cloudinary", "Git", "Jekyll", "Sublime Text", "Umami"],
       "Personvern og sikkerhet": ["KeePass", "Librewolf", "Thunderbird", "Wireguard"],
       "AI-verktøy": ["Claude", "Midjourney", "Ollama", "Perplexity"],
     }
