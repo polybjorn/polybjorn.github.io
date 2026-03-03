@@ -67,7 +67,6 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
         "url": "https://polybjorn.com"
       }
     }])} />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
     <slot name="head" />
     <style>
       html, body {
@@ -95,18 +94,27 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
         pointer-events: none;
         transform: translateY(-0.5rem);
       }
-      .lang-toggle .fi {
-        width: 1.75rem;
-        height: 1.25rem;
-        border-radius: 4px;
-        display: block;
-        overflow: hidden;
-      }
     </style>
   </head>
   <body>
     <a class="lang-toggle" href={otherUrl} title={otherLang === 'no' ? 'Norsk' : 'English'}>
-      <span class={`fi fi-${otherLang === 'no' ? 'no' : 'eu'}`}></span>
+      {otherLang === 'no' ? (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="28" height="20" style="border-radius:4px;display:block;">
+          <rect width="22" height="16" fill="#ef2b2d"/>
+          <rect x="6" width="4" height="16" fill="#fff"/>
+          <rect y="6" width="22" height="4" fill="#fff"/>
+          <rect x="7" width="2" height="16" fill="#002868"/>
+          <rect y="7" width="22" height="2" fill="#002868"/>
+        </svg>
+      ) : (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="28" height="20" style="border-radius:4px;display:block;">
+          <rect width="22" height="16" fill="#003399"/>
+          <g fill="#fc0" stroke="#fc0">
+            <circle cx="11" cy="8" r="3.5" fill="none" stroke-width="0.6"/>
+            <polygon points="11,4.8 11.4,6 12.7,6 11.7,6.8 12.1,8 11,7.3 9.9,8 10.3,6.8 9.3,6 10.6,6" transform="rotate(0,11,8)"/>
+          </g>
+        </svg>
+      )}
     </a>
     <slot />
     <script define:vars={{ lang }}>
