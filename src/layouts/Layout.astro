@@ -82,11 +82,13 @@ const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pa
         position: fixed;
         top: 1rem;
         right: 1rem;
+        display: inline-block;
         text-decoration: none;
         z-index: 100;
         opacity: 0.75;
         transition: opacity 0.3s, transform 0.3s;
-        line-height: 1;
+        line-height: 0;
+        font-size: 0;
       }
       .lang-toggle:hover { opacity: 1; }
       .lang-toggle.hidden {

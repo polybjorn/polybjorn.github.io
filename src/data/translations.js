@@ -1,6 +1,6 @@
 export const t = {
   en: {
-    bio1: "I work with 3D modelling, additive manufacturing, and graphic design — taking projects from first sketch to finished product. I also run hands-on courses in 3D printing and design. The variety of work is what keeps it interesting, and I'm always happy to help figure out what's possible.",
+    bio1: "I work with 3D modelling, additive manufacturing, and graphic design, taking projects from first sketch to finished product. I also run hands-on courses in 3D printing and design. The variety of work is what keeps it interesting, and I'm always happy to help figure out what's possible.",
     bio2: "I share editable designs under a free and open license when possible.",
     bio3: "Currently based on ",
     bio4: "Have a project in mind? I'd love to hear about it.",
@@ -19,7 +19,7 @@ export const t = {
     references: "References available on request",
   },
   no: {
-    bio1: "Jeg liker å lage ting — og å finne ut hvordan. Jeg jobber innen design, fabrikasjon, elektronikk og programvare, fra første idé til ferdig produkt. Jeg holder også kurs for de som vil bli kjent med verktøyene og prosessen.",
+    bio1: "Jeg liker å lage ting, og å finne ut hvordan. Jeg jobber innen design, fabrikasjon, elektronikk og programvare, fra første idé til ferdig produkt. Jeg holder også kurs for de som vil bli kjent med verktøyene og prosessen.",
     bio2: "Jeg deler redigerbare design under en fri og åpen lisens når det er mulig.",
     bio3: "Holder for tiden til på ",
     bio4: "Har du et prosjekt i tankene? Jeg hører gjerne om det.",
