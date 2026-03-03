@@ -1,18 +1,18 @@
 export const cv = {
   experience: [
     {
-      en: { title: "Sole proprietor", org: "Polybjorn Andersen", desc: "3D modelling and 3D printing, previously focused on production of furniture, kitchen fittings and other custom orders." },
-      no: { title: "Daglig leder i enkeltpersonforetak", org: "Polybjorn Andersen", desc: "3D-modellering og 3D-printing, tidligere fokus på produksjon av møbler, kjøkkeninnredning og andre spesialoppdrag." },
+      en: { title: "Sole proprietor", org: "Polybjorn Andersen", desc: "Design and fabrication services with a focus on 3D printing, spanning furniture, fittings, and custom commissions. Works directly with clients or collaborates with other makers." },
+      no: { title: "Daglig leder i enkeltpersonforetak", org: "Polybjorn Andersen", desc: "Design og produksjonstjenester med fokus på 3D-printing, innen møbler, innredning og spesialbestillinger. Jobber direkte med kunder eller i samarbeid med andre produsenter." },
       period: "2020 – Present"
     },
     {
-      en: { title: "Additive manufacturing workshop manager", org: "Lindesnesregionen Næringshage", desc: "Established and ran the Addidé innovation centre with courses in 3D design/printing, design services and series production. Over 40 clients primarily within design development, modelling and FDM/SLA printing." },
-      no: { title: "Verkstedsjef", org: "Lindesnesregionen Næringshage", desc: "Etablerte og drev innovasjonssenteret Addidé med kurs i 3D-design/printing, designtjenester og serieproduksjon. Over 40 kunder totalt primært innen designutvikling, modellering og FDM/SLA printing." },
+      en: { title: "Additive manufacturing workshop manager", org: "Lindesnesregionen Næringshage", desc: "Helped establish and independently managed the Addidé innovation centre, offering courses in 3D design and printing, design services, and series production. Worked with over 50 clients across design development, modelling, and FDM and SLA printing." },
+      no: { title: "Verkstedsjef", org: "Lindesnesregionen Næringshage", desc: "Var med på å etablere og driftet selvstendig innovasjonssenteret Addidé med kurs i 3D-design og -printing, designtjenester og serieproduksjon. Jobbet med over 50 kunder innen designutvikling, modellering og FDM- og SLA-printing." },
       period: "2021 – 2026"
     },
     {
-      en: { title: "Technical writer", org: "Nøsted &", desc: "Modernised Igland manuals with new 3D models, render images, vector graphics and restructured text." },
-      no: { title: "Teknisk forfatter", org: "Nøsted &", desc: "Moderniserte Igland-manualer med nye 3D-modeller, renderbilder, vektorgrafikk og restrukturert tekst." },
+      en: { title: "Technical writer", org: "Nøsted &", desc: "Modernised operator manuals for multiple Igland machine ranges across 7 languages in collaboration with engineers — new 3D models, renders, vector graphics and restructured text." },
+      no: { title: "Teknisk forfatter", org: "Nøsted &", desc: "Moderniserte operatørmanualer for flere Igland-maskinserier på 7 språk i samarbeid med ingeniører — nye 3D-modeller, renderbilder, vektorgrafikk og restrukturert tekst." },
       period: "2022 – 2024"
     },
     {
@@ -21,13 +21,13 @@ export const cv = {
       period: "2022 – 2024"
     },
     {
-      en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Maintenance of 3D printers, CNC and laser. Supported student projects, workshop improvements and teaching. Produced furniture and gifts for speakers." },
-      no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Vedlikehold av 3D-printere, CNC og laser. Støttet studentprosjekter, verkstedforbedringer og undervisning. Produserte møbler og gaver til foredragsholdere." },
+      en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Wide-ranging role at a creative folk high school covering workshop operations and maintenance of 3D printers, CNC and laser equipment, day-to-day building operations, event and stand hosting, catering, student project support and teaching. Also produced furniture for students, staff, and the school, as well as gifts for guest speakers." },
+      no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Bred rolle ved en kreativ folkehøyskole — drift og vedlikehold av verksted med 3D-printere, CNC og laser, daglig bygningsdrift, arrangement- og standforberedelse og -vertskap, matlaging, veiledning av studentprosjekter og undervisning. Produserte også møbler til studenter, ansatte og skolen, samt gaver til foredragsholdere." },
       period: "2018 – 2023"
     },
     {
-      en: { title: "Electrician apprentice", org: "Apply TB", desc: "Service and project work including fibre for Haugaland Kraft." },
-      no: { title: "Elektriker lærling", org: "Apply TB", desc: "Service- og prosjektarbeid inkludert fiber for Haugaland Kraft." },
+      en: { title: "Electrician apprentice", org: "Apply TB", desc: "Worked across residential service calls and large-scale construction projects, including fibre installation for Haugaland Kraft." },
+      no: { title: "Elektriker lærling", org: "Apply TB", desc: "Service- og prosjektarbeid fra private hjem til større byggeprosjekter, inkludert fiber for Haugaland Kraft." },
       period: "2014 – 2017"
     },
   ],
