@@ -9,25 +9,25 @@ export const cv = {
     {
       en: { title: "Additive manufacturing workshop manager", org: "Lindesnesregionen Næringshage", desc: "Helped establish and independently managed the Addidé innovation centre, offering courses in 3D design and printing, design services, and series production. Worked with over 50 clients across design development, modelling, and FDM and SLA printing." },
       no: { title: "Verkstedsjef", org: "Lindesnesregionen Næringshage", desc: "Var med på å etablere og driftet selvstendig innovasjonssenteret Addidé med kurs i 3D-design og -printing, designtjenester og serieproduksjon. Jobbet med over 50 kunder innen designutvikling, modellering og FDM- og SLA-printing." },
-      links: { website: "https://www.naringshagen.no/", instagram: "https://www.instagram.com/naringshagen/" },
+      links: { website: "https://naringshagen.no", instagram: "https://instagram.com/naringshagen" },
       period: "2021 – 2026"
     },
     {
       en: { title: "Technical writer", org: "Nøsted &", desc: "Modernised operator manuals for multiple Igland machine ranges across 7 languages in collaboration with engineers: new 3D models, renders, vector graphics and restructured text." },
       no: { title: "Teknisk forfatter", org: "Nøsted &", desc: "Moderniserte operatørmanualer for flere Igland-maskinserier på 7 språk i samarbeid med ingeniører: nye 3D-modeller, renderbilder, vektorgrafikk og restrukturert tekst." },
-      links: { website: "https://nosted.com", instagram: "https://www.instagram.com/nosted_com/" },
+      links: { website: "https://nosted.com", instagram: "https://instagram.com/nosted_com" },
       period: "2022 – 2024"
     },
     {
       en: { title: "Technician", org: "Mandal Frivilligsentral", desc: "Helped build and run Bua Makerspace, a Prusa 3D printer farm and internet café, open to the public. Technical support, courses and event responsibility." },
       no: { title: "Tekniker", org: "Mandal Frivilligsentral", desc: "Bidro til å bygge og drifte Bua Makerspace - Prusa 3D-printerfarm og internettkafé, åpent for publikum. Teknisk støtte, kurs og arrangementsansvar." },
-      links: { website: "https://mandal.frivilligsentral.no/", facebook: "https://www.facebook.com/mandalfrivilligsentral/" },
+      links: { website: "https://mandal.frivilligsentral.no", facebook: "https://facebook.com/mandalfrivilligsentral" },
       period: "2022 – 2024"
     },
     {
       en: { title: "Various roles", org: "Skap Kreativ Folkehøyskole", desc: "Wide-ranging role covering workshop operations and maintenance of 3D printers, CNC and laser equipment, day-to-day building operations, event and stand hosting, catering, student project support and teaching. Also produced furniture for students, staff, and the school, as well as gifts for guest speakers." },
       no: { title: "Ulike roller", org: "Skap Kreativ Folkehøyskole", desc: "Bred rolle: drift og vedlikehold av verksted med 3D-printere, CNC og laser, daglig bygningsdrift, arrangement- og standforberedelse og -vertskap, matlaging, veiledning av studentprosjekter og undervisning. Produserte også møbler til studenter, ansatte og skolen, samt gaver til foredragsholdere." },
-      links: { website: "https://www.skapfhs.no", instagram: "https://www.instagram.com/skapfhs" },
+      links: { website: "https://skapfhs.no", instagram: "https://instagram.com/skapfhs" },
       period: "2018 – 2023"
     },
     {
