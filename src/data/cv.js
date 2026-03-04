@@ -64,13 +64,13 @@ export const cv = {
     },
   ],
   skills: {
-    en: ["3D modelling, direct and parametric", "3D scanning", "Design / operation of workshop and production equipment", "Image editing, vector and pixel based", "Laser cutting / CNC machining", "Mechanical / product design", "System administration", "Technical documentation", "Training / knowledge transfer / technical support"],
-    no: ["3D modellering, direkte og parametrisk", "3D-skanning", "Design / drift av verksted og produksjonsutstyr", "Bilderedigering, vektor og pixelbasert", "Laserkutting / CNC-bearbeiding", "Mekanisk / produktdesign", "Systemadministrasjon", "Teknisk dokumentasjon", "Opplæring / videreformidling / teknisk support"],
+    en: ["3D modelling, direct and parametric", "3D scanning", "Design / operation of workshop and production equipment", "Image editing, vector and pixel based", "CO2 laser cutting / CNC machining / Vinyl cutting", "Mechanical / product design", "System administration", "Technical documentation", "Training / knowledge transfer / technical support"],
+    no: ["3D modellering, direkte og parametrisk", "3D-skanning", "Design / drift av verksted og produksjonsutstyr", "Bilderedigering, vektor og pixelbasert", "CO2-laserkutting / CNC-bearbeiding / Vinylkutting", "Mekanisk / produktdesign", "Systemadministrasjon", "Teknisk dokumentasjon", "Opplæring / videreformidling / teknisk support"],
   },
   software: {
     en: {
       "3D Modelling": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD", "Tinkercad"],
-      "Fabrication & Slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "Shining 3D", "Strecs3D"],
+      "Fabrication & Slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "FarmBot", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "ShopBot", "Shining 3D", "Strecs3D"],
       "Graphic Design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
       "Publishing & Writing": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Office 365", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operating Systems": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
@@ -82,7 +82,7 @@ export const cv = {
     },
     no: {
       "3D modellering": ["Autodesk AutoCAD", "Autodesk Fusion 360", "Autodesk Inventor", "Blender", "FreeCAD", "OpenSCAD", "Tinkercad"],
-      "Fabrikasjon og slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "Shining 3D", "Strecs3D"],
+      "Fabrikasjon og slicing": ["3D Gence", "Bambu Lab", "Creality", "Cricut", "Cura", "Elegoo", "Epilog", "FarmBot", "OrcaSlicer", "Prusa", "Raise3D", "Shapeoko", "ShopBot", "Shining 3D", "Strecs3D"],
       "Grafisk design": ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Affinity Photo", "DigiKam", "GIMP", "Inkscape"],
       "Publisering og skriving": ["Adobe InDesign", "Affinity Publisher", "Calibre", "Office 365", "Obsidian", "OnlyOffice", "Scrivener", "Sigil"],
       "Operativsystemer": ["Android", "Arch", "iOS", "macOS", "Proxmox", "Raspberry Pi", "Ubuntu", "Windows"],
