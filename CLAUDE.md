@@ -26,6 +26,15 @@ src/
 
 ## Stack
 
-- Astro 5 (SSG, no framework), vanilla CSS
-- Hosted on Cloudflare
+- Astro 5 (SSG, no framework), vanilla CSS (scoped styles inline in each `.astro` file)
+- Hosted on GitHub Pages, deployed via GitHub Actions on push
+- Cloudflare for DNS only
+- Cloudinary for image hosting and transforms — use `cloudinaryUrl()` helper from `made.js`
+- Piazzolla typeface via `@fontsource`, icons from `lucide-astro`
 - Dev server: `npm run dev` on port 4321
+
+## Privacy
+
+- No ads or third-party tracking
+- Analytics via Umami (cookieless)
+- Contact info is base64-encoded in client-side JS to reduce scraping — never expose in plain text
