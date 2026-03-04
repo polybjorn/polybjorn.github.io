@@ -1,4 +1,4 @@
-# Polybjorn v2
+# Polybjorn
 
 Personal portfolio and CV site for Bjørn A. Andersen.
 
