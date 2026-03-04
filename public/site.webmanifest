@@ -1,0 +1,19 @@
+{
+  "name": "Bjørn A. Andersen",
+  "short_name": "polybjorn",
+  "icons": [
+    {
+      "src": "/polybjorn-circular-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/polybjorn-no-border-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1e2228",
+  "background_color": "#1e2228",
+  "display": "standalone"
+}
