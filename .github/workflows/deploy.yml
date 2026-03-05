@@ -28,6 +28,7 @@ jobs:
           external_repository: polybjorn/polybjorn-no
           publish_branch: main
           publish_dir: ./dist-no
+          commit_message: ${{ github.event.head_commit.message }}
 
   deploy:
     needs: build
