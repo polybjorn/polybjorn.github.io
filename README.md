@@ -12,7 +12,6 @@ Personal portfolio and contact point.
 - [Cloudinary](https://cloudinary.com) — image hosting and transforms
 - [GitHub Pages](https://pages.github.com) — hosting
 - [GitHub Actions](https://github.com/features/actions) — deployment on push
-- [rough-notation](https://roughnotation.com) — hand-drawn underline animations
 - [Umami](https://umami.is) — cookieless, privacy-friendly analytics
 
 ## Assets
@@ -21,6 +20,7 @@ Personal portfolio and contact point.
 - [Icons8](https://icons8.com) — icons
 - [Lucide](https://lucide.dev) — icons
 - [Piazzolla](https://fontsource.org/fonts/piazzolla) — typeface
+- [rough-notation](https://roughnotation.com) — hand-drawn underline animations
 
 ## Structure
 
