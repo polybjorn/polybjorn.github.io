@@ -1,6 +1,9 @@
 # polybjorn.com
 
-Personal portfolio and contact point for Bjørn A. Andersen. Source for both [polybjorn.com](https://polybjorn.com) (English) and [polybjorn.no](https://polybjorn.no) (Norwegian). The Norwegian site deploys to [polybjorn/polybjorn-no](https://github.com/polybjorn/polybjorn-no).
+Personal portfolio and contact point.
+
+- [polybjorn.com](https://polybjorn.com) — English
+- [polybjorn.no](https://polybjorn.no) — Norwegian (deploys to [polybjorn/polybjorn-no](https://github.com/polybjorn/polybjorn-no))
 
 ## Stack
 
