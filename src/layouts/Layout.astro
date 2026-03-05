@@ -12,7 +12,7 @@ const noUrl = `https://polybjorn.no${noPath === '/' ? '' : noPath}`;
 const canonicalUrl = lang === 'en' ? enUrl : noUrl;
 const otherUrl = lang === 'en'
   ? `https://polybjorn.no${path === '/' ? '' : path}`
-  : `https://polybjorn.com${enPath === '/' ? '' : enPath}`;
+  : `https://polybjorn.com${enPath === '/' ? '' : enPath}?lang=en`;
 const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_fill,g_auto,w_1200,h_630/v1725405810/photo_jn86fv.jpg';
 ---
 <html lang={lang}>
