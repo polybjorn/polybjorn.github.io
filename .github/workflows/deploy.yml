@@ -26,6 +26,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.NO_DEPLOY_KEY }}
           external_repository: polybjorn/polybjorn-no
+          publish_branch: main
           publish_dir: ./dist-no
 
   deploy:

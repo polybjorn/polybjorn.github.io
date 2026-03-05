@@ -1,8 +1,8 @@
 # [polybjorn.com](https://polybjorn.com)
 
-## What this is
+Personal portfolio and contact point — who I am, what I do, where to find my work, and how to reach me.
 
-This is my personal portfolio and contact point. It lists who I am, what I do, where to find my work, and how to reach me. The site is deliberately minimal.
+Bilingual — English at [polybjorn.com](https://polybjorn.com), Norwegian at [polybjorn.no](https://polybjorn.no). This repo contains the source code for both. The Norwegian site is deployed separately to [polybjorn/polybjorn-no](https://github.com/polybjorn/polybjorn-no).
 
 ## Stack
 
@@ -15,14 +15,20 @@ This is my personal portfolio and contact point. It lists who I am, what I do, w
 
 ## Assets
 
-- **[flag-icons](https://github.com/lipis/flag-icons)** — language toggle flags
-- **[Icons8](https://icons8.com)** — icons
 - **[Lucide](https://lucide.dev)** — icons
 - **[Piazzolla](https://fontsource.org/fonts/piazzolla)** — typeface
 
 ## Structure
 
-Bilingual — English and Norwegian. Content is stored as plain JS objects, easy to edit.
+```
+src/
+  layouts/Layout.astro      — shared layout
+  pages/                    — English pages
+  pages/no/                 — Norwegian pages
+  data/                     — content as plain JS objects
+scripts/
+  prepare-deploy.mjs        — splits build output for two-repo deploy
+```
 
 ## Privacy
 
