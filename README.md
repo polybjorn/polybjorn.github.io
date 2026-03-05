@@ -1,6 +1,15 @@
 # polybjorn.com
 
-Source for both [polybjorn.com](https://polybjorn.com) (English) and [polybjorn.no](https://polybjorn.no) (Norwegian). The Norwegian site deploys to [polybjorn/polybjorn-no](https://github.com/polybjorn/polybjorn-no).
+Personal portfolio and contact point for Bjørn A. Andersen. Source for both [polybjorn.com](https://polybjorn.com) (English) and [polybjorn.no](https://polybjorn.no) (Norwegian). The Norwegian site deploys to [polybjorn/polybjorn-no](https://github.com/polybjorn/polybjorn-no).
+
+## Stack
+
+- [Astro](https://astro.build) — static site generator
+- [Cloudflare](https://cloudflare.com) — DNS
+- [Cloudinary](https://cloudinary.com) — image hosting and transforms
+- [GitHub Pages](https://pages.github.com) — hosting
+- [GitHub Actions](https://github.com/features/actions) — deployment on push
+- [Umami](https://umami.is) — cookieless, privacy-friendly analytics
 
 ## Assets
 
@@ -20,3 +29,8 @@ scripts/
   prepare-deploy.mjs        — splits build output for two-repo deploy
 ```
 
+## Privacy
+
+- No ads or third-party tracking
+- Analytics via Umami — cookieless, no personal data collected
+- Contact info encoded in HTML to reduce scraping
