@@ -18,10 +18,15 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run build
+      - run: npm run build:deploy
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.NO_DEPLOY_KEY }}
+          external_repository: polybjorn/polybjorn-no
+          publish_dir: ./dist-no
 
   deploy:
     needs: build
