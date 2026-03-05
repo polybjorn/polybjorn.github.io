@@ -9,7 +9,7 @@ const path = Astro.url.pathname;
 const canonicalUrl = `https://polybjorn.com${path === '/' ? '' : path}`;
 const enUrl = lang === 'en' ? canonicalUrl : `https://polybjorn.com${path.replace(/^\/no/, '') || '/'}`;
 const noUrl = lang === 'no' ? canonicalUrl : `https://polybjorn.com/no${path === '/' ? '' : path}`;
-const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_pad,b_rgb:1e2228,w_1200,h_630/v1725405810/photo_jn86fv.jpg';
+const ogImage = image ?? 'https://res.cloudinary.com/det9ftymo/image/upload/c_fill,g_auto,w_1200,h_630/v1725405810/photo_jn86fv.jpg';
 ---
 <html lang={lang}>
   <head>
