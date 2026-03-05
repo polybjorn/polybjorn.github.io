@@ -12,6 +12,7 @@ Personal portfolio and contact point.
 - [Cloudinary](https://cloudinary.com) — image hosting and transforms
 - [GitHub Pages](https://pages.github.com) — hosting
 - [GitHub Actions](https://github.com/features/actions) — deployment on push
+- [rough-notation](https://roughnotation.com) — hand-drawn underline animations
 - [Umami](https://umami.is) — cookieless, privacy-friendly analytics
 
 ## Assets
