@@ -40,7 +40,7 @@ scripts/
 
 ## Brand assets
 
-- Asset library: `~/Sync/Asset library/polybjorn/` (symlinked as `assets/` in repo root, gitignored)
+- `assets/` symlink in repo root points to the brand asset library (gitignored)
 - Brand guidelines and color palette: `assets/brand-guidelines/colors.md`
 - Favicons generated from `assets/svg/polybjorn-mark.svg` using `rsvg-convert` and ImageMagick
 - Logo source files are Affinity Designer (`.af`)
