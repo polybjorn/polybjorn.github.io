@@ -10,10 +10,10 @@ REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 cd "$REPO_ROOT"
 
 echo "Building English CV..."
-typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --root .
+typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --font-path cv/fonts --root .
 
 echo "Building Norwegian CV..."
-typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --root .
+typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --font-path cv/fonts --root .
 
 BRAND_DIR="$HOME/Vault/Assets/Brand/CV"
 if [ -d "$BRAND_DIR" ]; then
