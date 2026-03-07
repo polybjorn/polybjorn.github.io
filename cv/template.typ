@@ -217,7 +217,7 @@
 
 #grid(
   columns: (1fr, 100pt),
-  gutter: 16pt,
+  gutter: 60pt,
   {
     heading(level: 1)[Bjørn Andreas Andersen]
     block(above: 12pt, text(size: 9pt, fill: color-secondary, personal.born))
