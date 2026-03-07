@@ -142,9 +142,9 @@
       inset: (x: 10pt, y: 8pt),
       tool-grid(tool => {
         let filename = icon-filename-map.at(tool, default: tool)
-        if tool in icons-available or tool in icon-filename-map {
+        if filename in icons-available {
           box(width: 18pt, height: 18pt, image("icons/" + filename + ".svg", width: 100%, height: 100%, fit: "contain"))
-        } else if tool in icons-png {
+        } else if filename in icons-png {
           box(width: 18pt, height: 18pt, image("icons/" + filename + ".png", width: 100%, height: 100%, fit: "contain"))
         } else {
           box(width: 18pt, height: 18pt, fill: luma(220), radius: 2pt)
