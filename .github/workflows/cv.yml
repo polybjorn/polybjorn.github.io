@@ -19,6 +19,12 @@ jobs:
       - name: Install Typst
         uses: typst-community/setup-typst@v4
 
+      - name: Create dummy assets for compile-check
+        run: |
+          mkdir -p cv/icons cv/images
+          echo '{"svg": [], "png": []}' > cv/icons.json
+          echo 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQI12NgAAIABQABNjN9GQAAAABJRU5ErkJggg==' | base64 -d > cv/images/profile-photo.png
+
       - name: Build PDFs
         run: |
           mkdir -p cv/output

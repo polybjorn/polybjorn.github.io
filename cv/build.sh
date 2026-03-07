@@ -9,6 +9,20 @@ REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 
 cd "$REPO_ROOT"
 
+echo "Generating icon manifest..."
+svg_icons=""
+png_icons=""
+for f in cv/icons/*.svg; do
+  name="$(basename "$f" .svg)"
+  svg_icons="$svg_icons\"$name\", "
+done
+for f in cv/icons/*.png; do
+  name="$(basename "$f" .png)"
+  png_icons="$png_icons\"$name\", "
+done
+printf '{\n  "svg": [%s],\n  "png": [%s]\n}\n' \
+  "${svg_icons%, }" "${png_icons%, }" > cv/icons.json
+
 echo "Building English CV..."
 typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --font-path cv/fonts --root .
 
