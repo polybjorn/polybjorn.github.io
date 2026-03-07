@@ -15,5 +15,12 @@ typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --root .
 echo "Building Norwegian CV..."
 typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --root .
 
-echo "Done. Output:"
+BRAND_DIR="$HOME/Vault/Assets/Brand/CV"
+if [ -d "$BRAND_DIR" ]; then
+  cp cv/output/cv-en.pdf "$BRAND_DIR/"
+  cp cv/output/cv-no.pdf "$BRAND_DIR/"
+  echo "Done. Copied to $BRAND_DIR"
+else
+  echo "Done. Brand folder not found, output in cv/output/ only"
+fi
 ls -lh cv/output/*.pdf
