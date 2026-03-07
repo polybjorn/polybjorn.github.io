@@ -30,10 +30,26 @@ src/
   layouts/Layout.astro      — shared layout
   pages/                    — English pages
   pages/no/                 — Norwegian pages
-  data/                     — content as plain JS objects
+  data/cv.yaml              — CV content (single source of truth)
+  data/cv.js                — re-exports YAML for Astro imports
+  data/                     — other content as plain JS objects
+cv/
+  template.typ              — Typst CV template
+  build.sh                  — generates PDF CVs (both languages)
+  output/                   — generated PDFs (gitignored)
 scripts/
   prepare-deploy.mjs        — splits build output for two-repo deploy
 ```
+
+## CV generation
+
+CV data in `src/data/cv.yaml` feeds both the website and PDF output via [Typst](https://typst.app).
+
+```sh
+sh cv/build.sh              # generates cv/output/cv-en.pdf and cv-no.pdf
+```
+
+Requires `typst` (`brew install typst`).
 
 ## Privacy
 

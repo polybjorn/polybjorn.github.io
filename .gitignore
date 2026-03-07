@@ -1,6 +1,7 @@
 # build output
 dist/
 dist-no/
+cv/output/
 # generated types
 .astro/
 
