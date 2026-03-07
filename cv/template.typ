@@ -1,6 +1,6 @@
 // CV Template — Polybjorn
-// Usage: typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --root .
-//        typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --root .
+// Usage: typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --font-path cv/fonts --root .
+//        typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --font-path cv/fonts --root .
 
 // --- Configuration ---
 
@@ -13,13 +13,15 @@
     experience: "Experience",
     education: "Education",
     skills: "Skills",
-    software: "Software Skills",
+    software: "Software skills",
+    at-org: "for",
   ),
   no: (
     experience: "Arbeidserfaring",
     education: "Utdannelse",
     skills: "Ferdigheter",
     software: "Programvare",
+    at-org: "hos",
   ),
 )
 
@@ -29,11 +31,11 @@
 
 #let color-body = rgb("#111111")
 #let color-secondary = rgb("#222222")
-#let color-heading = rgb("#333333")
+#let color-heading = rgb("#111111")
 #let color-muted = rgb("#8A8F99")
 #let color-accent = rgb("#6AAEEE")
 #let color-box-bg = rgb("#e8e8ee")
-#let section-gap = 16pt
+#let section-gap = 24pt
 
 // --- Page setup ---
 
@@ -43,7 +45,7 @@
 )
 
 #set text(
-  font: "Helvetica Neue",
+  font: "Liberation Sans",
   size: 8.5pt,
   fill: color-body,
 )
@@ -67,15 +69,16 @@
 
 // --- Helper functions ---
 
-#let experience-entry(title: "", org: "", period: "", desc: none) = {
+#let experience-entry(title: "", org: "", period: "", desc: none, prep: "for") = {
   block(above: 14pt, below: 0pt, {
     grid(
       columns: (72pt, 1fr),
       gutter: 10pt,
       text(size: 8pt, fill: color-muted, period),
       {
-        text(weight: "bold", size: 8.5pt)[#title for #org]
+        text(weight: "bold", size: 8.5pt)[#title #prep #org]
         if desc != none {
+          linebreak()
           text(fill: color-secondary, size: 8pt, desc)
         }
       },
@@ -85,39 +88,123 @@
 
 #let education-entry(title: "", org: "", period: "") = {
   block(above: 12pt, below: 0pt, {
-    text(size: 8pt, fill: color-muted, period)
-    h(6pt)
-    text(weight: "bold", size: 8.5pt, org)
-    linebreak()
-    h(50pt)
-    text(size: 8pt, fill: color-secondary, title)
+    grid(
+      columns: (72pt, 1fr),
+      gutter: 10pt,
+      text(size: 8pt, fill: color-muted, period),
+      {
+        text(weight: "bold", size: 8.5pt, org)
+        linebreak()
+        text(size: 8pt, fill: color-secondary, title)
+      },
+    )
   })
 }
 
+#let icons-available = (
+  "Adobe Illustrator",
+  "Adobe InDesign",
+  "Adobe Photoshop",
+  "Affinity",
+  "Ansible",
+  "Astro",
+  "Autodesk Fusion 360",
+  "Autodesk Inventor",
+  "Bambu Lab",
+  "Blender",
+  "Calibre",
+  "Cloudflare",
+  "Cura",
+  "DigiKam",
+  "Docker",
+  "FreeCAD",
+  "GIMP",
+  "Git",
+  "Home Assistant",
+  "Inkscape",
+  "JavaScript",
+  "nginx",
+  "Obsidian",
+  "Office 365",
+  "OpenSCAD",
+  "OrcaSlicer",
+  "G-code",
+  "Prusa",
+  "Python",
+  "Scrivener",
+  "Shapeoko",
+  "ShopBot",
+  "Sublime Text",
+  "Syncthing",
+  "Tailscale",
+  "Umami",
+  "YAML",
+)
+
+#let icons-png = (
+  "Epilog",
+)
+
+// Tool names that don't work as filenames (e.g. slashes)
+#let icon-filename-map = (
+  "HTML/CSS": "HTML-CSS",
+)
+
 #let software-box(category, tools) = {
-  block(
-    width: 100%,
-    fill: color-box-bg,
-    radius: 4pt,
-    inset: (x: 12pt, y: 8pt),
-    above: 6pt,
-    {
-      align(center, text(weight: "bold", size: 9pt, fill: color-heading, category))
-      v(6pt)
-      // Icon grid — replace text cells with image() when icons are ready
+  block(above: 10pt, width: 100%, {
+    place(dx: 1.5pt, dy: 1.5pt, block(
+      width: 100%,
+      fill: luma(180),
+      radius: 4pt,
+      inset: (x: 10pt, y: 8pt),
+      hide({
+        text(weight: "bold", size: 8.5pt, category)
+        v(4pt)
+        let cols = calc.min(tools.len(), 6)
+        grid(
+          columns: (1fr,) * cols,
+          row-gutter: 4pt,
+          column-gutter: 4pt,
+          ..tools.map(tool => align(center, {
+            box(width: 18pt, height: 18pt)
+            linebreak()
+            v(1pt)
+            text(size: 6.5pt, tool)
+          }))
+        )
+      })
+    ))
+    block(
+      width: 100%,
+      fill: color-box-bg,
+      radius: 4pt,
+      stroke: 0.5pt + luma(200),
+      inset: (x: 10pt, y: 8pt),
+      {
+      align(center, text(weight: "bold", size: 8.5pt, fill: color-heading, category))
+      v(4pt)
       let cols = calc.min(tools.len(), 6)
       grid(
         columns: (1fr,) * cols,
-        row-gutter: 6pt,
+        row-gutter: 4pt,
         column-gutter: 4pt,
         ..tools.map(tool => align(center, {
-          // Placeholder: icon goes here
-          // image("icons/" + tool.replace(" ", "-").lower() + ".svg", width: 16pt)
-          text(size: 7.5pt, fill: color-secondary, tool)
+          let filename = icon-filename-map.at(tool, default: tool)
+          if tool in icons-available or tool in icon-filename-map {
+            box(width: 18pt, height: 18pt, image("icons/" + filename + ".svg", width: 100%, height: 100%, fit: "contain"))
+          } else if tool in icons-png {
+            box(width: 18pt, height: 18pt, image("icons/" + filename + ".png", width: 100%, height: 100%, fit: "contain"))
+          } else {
+            box(width: 18pt, height: 18pt, fill: luma(220), radius: 2pt)
+          }
+          linebreak()
+          v(1pt)
+          text(size: 6.5pt, fill: color-secondary, tool)
         }))
       )
     }
   )
+  })
 }
 
 // ============================================================
@@ -129,41 +216,25 @@
 #let personal = contact.personal.at(lang)
 
 #grid(
-  columns: (1fr, auto),
+  columns: (1fr, 100pt),
   gutter: 16pt,
   {
     heading(level: 1)[Bjørn Andreas Andersen]
     block(above: 12pt, text(size: 9pt, fill: color-secondary, personal.born))
     block(above: 8pt, text(size: 9pt, fill: color-secondary, personal.address))
-  },
-  box(
-    width: 100pt,
-    height: 100pt,
-    radius: 50pt,
-    clip: true,
-    image("images/profile-photo.png", width: 100pt, height: 100pt),
-  ),
-)
-
-// --- Skills + Contact ---
-
-#v(-16pt)
-#block(above: 0pt, below: 0pt, grid(
-  columns: (1fr, auto),
-  gutter: 20pt,
-  {
-    heading(level: 2)[#label.skills]
-    {
-      let skills = data.skills.filter(s => s.at("cv", default: true))
-      for (i, skill) in skills.enumerate() {
-        [· #skill.at(lang)]
-        if i < skills.len() - 1 { [\ ] }
-      }
-    }
+    v(24pt)
+    block(text(size: 8.5pt, fill: color-secondary, data.profile.at(lang)))
   },
   {
-    v(34pt)
-    align(right, {
+    box(
+      width: 100pt,
+      height: 100pt,
+      radius: 50pt,
+      clip: true,
+      image("images/profile-photo.png", width: 100pt, height: 100pt),
+    )
+    v(8pt)
+    align(center, {
       text(size: 9.5pt, contact.phone)
       linebreak()
       text(size: 9.5pt, contact.email)
@@ -171,21 +242,37 @@
       text(size: 9.5pt, contact.website.at(lang))
     })
   },
-))
+)
 
-// --- Education ---
+// --- Education + Skills ---
 
 #v(section-gap)
-== #label.education
-
-#for item in data.education {
-  let loc = item.at(lang)
-  education-entry(
-    title: loc.title,
-    org: loc.org,
-    period: item.period,
-  )
-}
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 24pt,
+  {
+    heading(level: 2)[#label.education]
+    for item in data.education {
+      let loc = item.at(lang)
+      let p = item.period
+      let period = if type(p) == dictionary { p.at(lang) } else { p }
+      education-entry(
+        title: loc.title,
+        org: loc.org,
+        period: period,
+      )
+    }
+  },
+  {
+    heading(level: 2)[#label.skills]
+    {
+      let skills = data.skills.filter(s => s.at("cv", default: true))
+      for (i, skill) in skills.enumerate() {
+        block(above: 6pt, below: 0pt, [· #skill.at(lang)])
+      }
+    }
+  },
+)
 
 // --- Experience ---
 
@@ -194,11 +281,14 @@
 
 #for item in data.experience {
   let loc = item.at(lang)
+  let p = item.period
+  let period = if type(p) == dictionary { p.at(lang) } else { p }
   experience-entry(
     title: loc.title,
     org: loc.org,
-    period: item.period,
+    period: period,
     desc: loc.at("desc", default: none),
+    prep: label.at-org,
   )
 }
 
@@ -229,18 +319,21 @@
 
 // --- Software Skills ---
 
-== #label.software
+#align(center, heading(level: 2)[#label.software])
+
+#v(8pt)
 
 #for cat in data.software.filter(c => c.at("cv", default: true)) {
-  software-box(cat.category.at(lang), cat.tools)
+  let tools = cat.at("cv_tools", default: cat.tools)
+  software-box(cat.category.at(lang), tools)
 }
 
 // --- Client List ---
 
-#v(16pt)
+#v(section-gap)
 
 #let client-data = data.clients
-== #client-data.at(lang).title
+#align(center, heading(level: 2)[#client-data.at(lang).title])
 
 #v(4pt)
 
@@ -251,9 +344,9 @@
   let cells = ()
   for i in range(rows) {
     for c in range(cols) {
-      let idx = c * rows + i
+      let idx = i * cols + c
       if idx < items.len() {
-        cells.push(text(size: 8.5pt, items.at(idx)))
+        cells.push(align(center, text(size: 8.5pt, items.at(idx))))
       } else {
         cells.push([])
       }
@@ -261,7 +354,8 @@
   }
   grid(
     columns: (1fr, 1fr, 1fr),
-    row-gutter: 4pt,
+    row-gutter: 8pt,
+    column-gutter: 16pt,
     ..cells,
   )
 }
