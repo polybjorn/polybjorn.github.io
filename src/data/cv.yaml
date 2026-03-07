@@ -1,27 +1,3 @@
-personal:
-  en:
-    born: "Born April 23, 1996 in Bergen, raised on Karmøy"
-    address: "Address: Urdavegen 23, 5549 Røvær"
-  no:
-    born: "Født 23. april 1996 i Bergen, oppvokst på Karmøy"
-    address: "Bosted: Urdavegen 23, 5549 Røvær"
-
-hobbies:
-  en:
-    title: "Out of office.."
-    items:
-      - Spend time cooking — learning new techniques and recipes
-      - Helping with other people's projects
-      - Enjoy hiking and camping
-      - Otherwise interested in music, film and books
-  no:
-    title: "Borte fra kontoret.."
-    items:
-      - Bruker jeg tid på matlaging - lære nye teknikker og oppskrifter
-      - Hjelper med andre sine prosjekter
-      - Jeg er veldig glad i fjellturer og camping
-      - Ellers er jeg opptatt av musikk, film og bøker
-
 certifications:
   en:
     title: Certifications

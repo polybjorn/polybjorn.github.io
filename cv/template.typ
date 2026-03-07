@@ -126,7 +126,7 @@
 
 // --- Header: Name + Photo ---
 
-#let personal = data.personal.at(lang)
+#let personal = contact.personal.at(lang)
 
 #grid(
   columns: (1fr, auto),
