@@ -29,8 +29,8 @@ jobs:
       - name: Build PDFs
         run: |
           mkdir -p cv/output
-          typst compile cv/template.typ cv/output/cv-en.pdf --input lang=en --font-path cv/fonts --root .
-          typst compile cv/template.typ cv/output/cv-no.pdf --input lang=no --font-path cv/fonts --root .
+          typst compile cv/template.typ cv/output/CV-Bjorn-Andersen-EN.pdf --input lang=en --font-path cv/fonts --root .
+          typst compile cv/template.typ cv/output/CV-Bjorn-Andersen-NO.pdf --input lang=no --font-path cv/fonts --root .
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4

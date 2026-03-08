@@ -46,7 +46,7 @@ scripts/
 CV data in `src/data/cv.yaml` feeds both the website and PDF output via [Typst](https://typst.app).
 
 ```sh
-sh cv/build.sh              # generates cv/output/cv-en.pdf and cv-no.pdf
+sh cv/build.sh              # generates CV-Bjorn-Andersen-EN.pdf and -NO.pdf
 ```
 
 Requires `typst` (`brew install typst`).

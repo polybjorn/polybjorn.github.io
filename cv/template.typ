@@ -14,7 +14,7 @@
     education: "Education",
     skills: "Skills",
     software: "Software skills",
-    at-org: "for",
+    at-org: "at",
   ),
   no: (
     experience: "Arbeidserfaring",
@@ -106,6 +106,7 @@
 // Tool names that don't work as filenames (e.g. slashes)
 #let icon-filename-map = (
   "HTML/CSS": "HTML-CSS",
+  "Affinity Publisher": "Affinity",
 )
 
 #let software-box(category, tools) = {
