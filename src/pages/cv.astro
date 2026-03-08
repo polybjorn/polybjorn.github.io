@@ -238,9 +238,9 @@ const tr = t[lang];
     }
 
     .cv-downloads {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      justify-content: center;
       gap: 0.8rem;
     }
 
@@ -258,6 +258,10 @@ const tr = t[lang];
       letter-spacing: 0.05em;
       text-transform: uppercase;
       transition: color 0.2s;
+    }
+
+    .cv-downloads a:first-child {
+      text-align: right;
     }
 
     .cv-downloads a:hover {
@@ -333,7 +337,7 @@ const tr = t[lang];
       <h1>Bjørn Andreas Andersen</h1>
       <div class="cv-downloads">
         <a href="/CV-Bjorn-Andersen-EN.pdf" target="_blank" rel="noopener" class="current">{tr.cv_current}</a>
-        <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772282318/resume_mjdcft.svg" class="cv-icon" alt="" />
+        <img src="https://res.cloudinary.com/djpkffk5u/image/upload/v1772982861/save_kwmfy3.svg" class="cv-icon" alt="" />
         <a href="/CV-Bjorn-Andersen-NO.pdf" target="_blank" rel="noopener">{tr.cv_other}</a>
       </div>
     </div>
