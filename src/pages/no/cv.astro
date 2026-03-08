@@ -26,7 +26,7 @@ const tr = t[lang];
     .cv-wrap {
       max-width: 720px;
       width: 100%;
-      padding: 4rem 2rem 4rem;
+      padding: 3rem 2rem 4rem;
     }
 
     .cv-header {
@@ -39,8 +39,8 @@ const tr = t[lang];
     }
 
     .cv-avatar {
-      width: 130px;
-      height: 130px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -245,8 +245,8 @@ const tr = t[lang];
     }
 
     .cv-downloads .cv-icon {
-      width: 36px;
-      height: 36px;
+      width: 48px;
+      height: 48px;
       object-fit: contain;
       opacity: 0.85;
     }
@@ -274,6 +274,17 @@ const tr = t[lang];
 
     .cv-downloads a.current:hover {
       color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .cv-avatar {
+        width: 130px;
+        height: 130px;
+      }
+      .cv-downloads .cv-icon {
+        width: 36px;
+        height: 36px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -346,7 +357,7 @@ const tr = t[lang];
       <h2>{tr.experience}</h2>
       {cv.experience.map(entry => (
         <div class="entry">
-          <div class="period">{entry.period}</div>
+          <div class="period">{typeof entry.period === 'string' ? entry.period : entry.period[lang]}</div>
           <div class="entry-content">
             <div class="title">{entry[lang].title}</div>
             <div class="org">
@@ -379,7 +390,7 @@ const tr = t[lang];
       <h2>{tr.education}</h2>
       {cv.education.map(entry => (
         <div class="entry">
-          <div class="period">{entry.period}</div>
+          <div class="period">{typeof entry.period === 'string' ? entry.period : entry.period[lang]}</div>
           <div class="entry-content">
             <div class="title">{entry[lang].title}</div>
             <div class="org">{entry[lang].org}</div>
