@@ -179,7 +179,7 @@
       height: 100pt,
       radius: 50pt,
       clip: true,
-      image("images/profile-photo.png", width: 100pt, height: 100pt),
+      image("images/profile-photo-cv.png", width: 100pt, height: 100pt),
     )
     v(8pt)
     align(center, {

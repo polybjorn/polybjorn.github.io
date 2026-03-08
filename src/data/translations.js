@@ -18,6 +18,8 @@ export const t = {
     software: "Software & Tools",
     present: "Present",
     references: "References available on request",
+    download_en: "Download CV (English)",
+    download_no: "Download CV (Norwegian)",
     notFound: "This page doesn't exist.",
     goHome: "Go home",
   },
@@ -40,6 +42,8 @@ export const t = {
     software: "Programvare",
     present: "Aktiv",
     references: "Referanser oppgis på forespørsel",
+    download_en: "Last ned CV (Engelsk)",
+    download_no: "Last ned CV (Norsk)",
     notFound: "Denne siden finnes ikke.",
     goHome: "Gå hjem",
   }

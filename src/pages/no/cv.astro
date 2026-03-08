@@ -237,6 +237,23 @@ const tr = t[lang];
       margin-top: 0.5rem;
     }
 
+    .cv-downloads {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cv-downloads a {
+      color: #6aaeee;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+
+    .cv-downloads a:hover { color: #fff; }
+
     @media (max-width: 480px) {
       .entry {
         grid-template-columns: 1fr;
@@ -296,6 +313,10 @@ const tr = t[lang];
         alt="Bjørn A. Andersen"
       />
       <h1>Bjørn Andreas Andersen</h1>
+      <div class="cv-downloads">
+        <a href="/CV-Bjorn-Andersen-NO.pdf" download>{tr.download_no}</a>
+        <a href="/CV-Bjorn-Andersen-EN.pdf" download>{tr.download_en}</a>
+      </div>
     </div>
 
     <section>
