@@ -106,7 +106,6 @@
 // Tool names that don't work as filenames (e.g. slashes)
 #let icon-filename-map = (
   "HTML/CSS": "HTML-CSS",
-  "Affinity Publisher": "Affinity",
 )
 
 #let software-box(category, tools) = {
@@ -216,7 +215,8 @@
     {
       let skills = data.skills.filter(s => s.at("cv", default: true))
       for (i, skill) in skills.enumerate() {
-        block(above: 6pt, below: 0pt, [· #skill.at(lang)])
+        let gap = if i == 0 { 12pt } else { 6pt }
+        block(above: gap, below: 0pt, [· #skill.at(lang)])
       }
     }
   },
